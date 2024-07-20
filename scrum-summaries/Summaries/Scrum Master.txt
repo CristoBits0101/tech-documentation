@@ -1,0 +1,23 @@
+Fase 1) Pre-Sprint: 
+	1. Se selecciona las historias de usuarios que se pueden cumplir en el sprint.
+	2. Se verifica que las historias de usuarios cumplan las necesidades de los clientes.
+	3. Se asegura que todos los miembros participen.
+	4. El equipo se ha de comprometer a cumplir el cronograma.
+	5. Se debe realizar primero los sprints pendientes.
+
+Fase 2) In-Sprint:
+	1. Reunión con todos los miembros.
+	2. Traer el tablero kanban actualizado y los gráficos.
+	3. Scrum master soluciona bloqueos e impedimentos.
+	4. Se verifica que se esté cumpliendo las historias de usuario.
+
+Fase 3) Review/Demo-Sprint:
+	1. Verifica que el trabajo esté listo para la revisión.
+	2. Se traé al cliente a la demostración.
+	3. Se obtienen comentarios.
+
+Fase 4) Retrospective:
+	1. Cada miembro comparte lo que salió bien.
+	2. Cada miembro comparte lo que se puede mejorar.
+	3. Ideas para mejorarlo.
+	4. Consejo para incorporar en los siguientes sprints lo que hay que mejorar.
