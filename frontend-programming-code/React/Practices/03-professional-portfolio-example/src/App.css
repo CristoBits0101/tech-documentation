@@ -1,0 +1,136 @@
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  width: 80.5rem;
+  display: grid;
+  place-content: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+#about {
+  display: grid;
+  height: 838.11px;
+  place-content: center;
+  box-sizing: border-box;
+  padding: 2.5rem 0;
+}
+
+#projects {
+  height: min-content;
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(39rem, 1fr));
+  box-sizing: border-box;
+  padding: 2.5rem 0;
+  gap: 2.5rem;
+}
+
+#skills {
+  height: min-content;
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  padding: 2.5rem 0;
+  gap: 2.5rem;
+}
+
+h4 {
+  margin: 0 auto;
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.25rem;
+}
+
+#skills-title {
+  margin-top: 7.5rem;
+}
+
+.grow {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+
+.grow:hover {
+  transform: scale3d(1.2, 1.2, 0.3);
+  -webkit-transform: scale3d(1.2, 1.2, 0.3);
+  -moz-transform: scale3d(1.2, 1.2, 0.3);
+}
+
+.transUp {
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+}
+
+.transUp:hover {
+  transform: translatey(-20px);
+  -webkit-transform: translatey(-20px);
+  -moz-transform: translatey(-20px);
+}
+
+.flicker:hover {
+  animation-name: flicker;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.heartbeat:hover {
+  animation-name: heartbeat;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.3);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 1519.2px) and (max-width: 1903px) {
+  section {
+    height: 639.58px;
+  }
+}
+
+@media (max-width: 1519.1px) {
+  section {
+    height: min-content;
+  }
+}
