@@ -1,6 +1,6 @@
 @RequestMapping("/api")                              // 1. Prefijo para todas las rutas.
 @Controller                                          // 2. Declaramos el controlador.
-public class ControllerResponseBody {                // 3. Prefijo para todas las rutas.
+public class 1_ControllerResponseBody {              // 3. Prefijo para todas las rutas.
     @GetMapping("/")                                 // 4. Mapeamos los métodos.
     @ResponseBody                                    // 5. Devuelve un JSON.
     public Map<String, Object> index(){              // 6. Retorna un map.
