@@ -1,5 +1,5 @@
-@Controller                                          // 1. Declaramos el controlador.
-@RequestMapping("/api")                              // 2. Prefijo para todas las rutas.
+@RequestMapping("/api")                              // 1. Prefijo para todas las rutas.
+@Controller                                          // 2. Declaramos el controlador.
 public class ControllerResponseBody {                // 3. Prefijo para todas las rutas.
     @GetMapping("/")                                 // 4. Mapeamos los métodos.
     @ResponseBody                                    // 5. Devuelve un JSON.
