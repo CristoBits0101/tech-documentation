@@ -3,6 +3,8 @@
  * Respeta los tipos de los datos.
  */
 public class 5_RestControllerParam() {
+
+    // localhost:8/libro?name="mibook"&price="23.2"
     @GetMapping("/")                                 
     public UserDto index(@RequestParam String name, @RequestParam(requited = false, defaultValue = null) Integer age) {
         
@@ -14,4 +16,5 @@ public class 5_RestControllerParam() {
         return userDto;
 
     }
+    
 }
