@@ -8,7 +8,7 @@ public class JerseyController {
      * @return Response
      */
     @GET
-    @Produces(MediaType.APPLICATION_JSON)   // Devuelve el objeto en un formato JSON.
+    @Produces(MediaType.APPLICATION_JSON)   // Devuelve el objeto en un JSON.
     public Response getUsers() {
         return Response
             .status(Response.Status.OK)     // Response.Status.OK(200) || Response.Status.NOT_FOUND(404)
