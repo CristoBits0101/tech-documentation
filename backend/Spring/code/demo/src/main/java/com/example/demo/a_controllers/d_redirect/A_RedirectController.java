@@ -8,9 +8,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class A_RedirectController {
 
-    @GetMapping("/hello")
+    @GetMapping("/page")
     public String redirectPage() {
-        return "redirect:hello";
+        // redirect @GetMapping("/bye")
+        return "redirect:bye";
+    }
+
+    @GetMapping("/bye")
+    public String bye() {
+        // resources/templates/bye.html
+        return "bye";
     }
 
 }
