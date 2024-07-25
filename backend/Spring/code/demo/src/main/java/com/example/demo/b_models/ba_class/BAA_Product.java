@@ -1,9 +1,9 @@
-package com.example.demo.b_models.a_class;
+package com.example.demo.b_models.ba_class;
 
 import org.springframework.stereotype.Component;
 
 @Component
-public class A_Product {
+public class BAA_Product {
 
     // Atributes
     private Long id;
@@ -11,10 +11,10 @@ public class A_Product {
     private int price;
 
     // Constructors
-    public A_Product() {
+    public BAA_Product() {
     }
 
-    public A_Product(Long id, String name, int price) {
+    public BAA_Product(Long id, String name, int price) {
         this.id = id;
         this.name = name;
         this.price = price;

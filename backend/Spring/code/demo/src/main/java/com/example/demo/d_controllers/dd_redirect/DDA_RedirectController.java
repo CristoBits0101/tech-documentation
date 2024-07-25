@@ -1,4 +1,4 @@
-package com.example.demo.a_controllers.d_redirect;
+package com.example.demo.d_controllers.dd_redirect;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RequestMapping("/redirect")
 @Controller
-public class A_RedirectController {
+public class DDA_RedirectController {
 
     @GetMapping("/page")
     public String redirectPage() {

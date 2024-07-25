@@ -1,4 +1,4 @@
-package com.example.demo.a_controllers.c_receive;
+package com.example.demo.d_controllers.dc_receive;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 @RequestMapping("/path")
 @RestController
-public class C_PathVariableController {
+public class DCC_PathVariableController {
 
     @GetMapping("/param/{name}")
     public String name(@PathVariable() String name) {

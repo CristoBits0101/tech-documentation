@@ -1,18 +1,17 @@
-package com.example.demo.a_controllers.a_types;
+package com.example.demo.d_controllers.da_types;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
-@RequestMapping("/hybrid")
+@RequestMapping("/mvc")
 @Controller
-public class B_HybridController {
+public class DAA_MvcController {
 
     @GetMapping("/hello")
-    @ResponseBody
     public String hello() {
-        return "Hola desde el controlador híbrido.";
+        // resources/templates/hello.html
+        return "hello";
     }
 
 }

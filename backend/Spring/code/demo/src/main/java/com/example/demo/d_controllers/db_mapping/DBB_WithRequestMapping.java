@@ -1,4 +1,4 @@
-package com.example.demo.a_controllers.b_mapping;
+package com.example.demo.d_controllers.db_mapping;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RequestMapping("/with")
 @RestController
-public class D_WithHyphenSeparation {
+public class DBB_WithRequestMapping {
 
-    @GetMapping("/hyphen-separation")
+    @GetMapping("/prefix")
     public String hello() {
-        return "Con separación de guion.";
+        return "Con prefijo.";
     }
 
 }

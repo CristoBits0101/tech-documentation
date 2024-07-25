@@ -1,16 +1,16 @@
-package com.example.demo.a_controllers.b_mapping;
+package com.example.demo.d_controllers.da_types;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RequestMapping("/with")
+@RequestMapping("/api")
 @RestController
-public class B_WithRequestMapping {
+public class DAC_ApiController {
 
-    @GetMapping("/prefix")
+    @GetMapping("/hello")
     public String hello() {
-        return "Con prefijo.";
+        return "Hola desde el controlador de la api.";
     }
 
 }
