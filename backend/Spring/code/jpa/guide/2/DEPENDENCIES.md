@@ -1,16 +1,13 @@
 # Dependencies
 
-    • Spring Web:
-        - MVC
-        - RESTful
-        - IoC
-        - Tomcat
+    • MySQL Driver:
+        - MySQL JDBC driver
+
+    • Spring Data JPA:
+        - SQL
+        - Java Persistence API
+        - Spring Data
+        - Hibernate
 
     • Spring Boot DevTools:
         - LiveReload
-
-    • Spring Boot Actuator:
-        - Monitor application
-
-    • Spring Cloud Routing:
-        - OpenFeign
