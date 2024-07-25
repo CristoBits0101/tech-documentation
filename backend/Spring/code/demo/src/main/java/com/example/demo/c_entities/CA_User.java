@@ -6,7 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Table(name = "users")
+@Table(name = "persons")
 @Entity
 @AllArgsConstructor
 @Data
@@ -15,7 +15,8 @@ public class CA_User {
     
     @id
     private Long id;
-
     private String name;
+    private String lastname;
+    private String programming_language;
 
 }
