@@ -1,6 +1,9 @@
 package com.example.demo.c_entities;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -13,7 +16,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class CA_User {
     
-    @id
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String lastname;
