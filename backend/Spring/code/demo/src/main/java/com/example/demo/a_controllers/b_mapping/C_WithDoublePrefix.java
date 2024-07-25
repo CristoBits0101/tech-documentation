@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RequestMapping("/with")
 @RestController
-public class C_DoublePrefix {
+public class C_WithDoublePrefix {
 
-    @GetMapping("/prefix")
+    @GetMapping("/double/prefix")
     public String hello() {
-        return "Con prefijo.";
+        return "Con doble prefijo.";
     }
 
 }
