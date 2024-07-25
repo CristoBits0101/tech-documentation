@@ -1,9 +1,11 @@
-# Include
+# 1. Project Metadata
 
-    • groupId: Nombre para el repositorio Maven.
-    • packageName: Nombre para agrupar las clases y paquetes.
-    • artifactId: Nombre del JAR.
-    • nombre: Nombre de la carpeta del proyecto.
+    • groupId    : Nombre de repositorio
+    • artifactId : Nombre de JAR
+    • nombre     : Nombre de carpeta
+    • packageName: Nombre de paquete
+
+# 2. Project Dependencies
 
     • Spring Web:
         - IoC
