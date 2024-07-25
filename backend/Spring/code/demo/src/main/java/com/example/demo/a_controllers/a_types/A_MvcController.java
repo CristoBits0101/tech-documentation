@@ -10,7 +10,8 @@ public class A_MvcController {
 
     @GetMapping("/hello")
     public String hello() {
-        return "Hola desde el controlador mvc.";
+        // resources/templates/hello.html
+        return "hello";
     }
 
 }
