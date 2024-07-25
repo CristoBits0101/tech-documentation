@@ -1,9 +1,9 @@
-package com.example.demo.b_models.dto;
-
-import com.example.demo.b_models.Cat;
+package com.example.demo.b_models.b_dto.dto;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import com.example.demo.b_models.b_dto.Cat;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

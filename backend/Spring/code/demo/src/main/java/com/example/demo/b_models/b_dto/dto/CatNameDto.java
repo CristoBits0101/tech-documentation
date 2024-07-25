@@ -1,4 +1,4 @@
-package com.example.demo.b_models.dto;
+package com.example.demo.b_models.b_dto.dto;
 
 import org.springframework.stereotype.Component;
 

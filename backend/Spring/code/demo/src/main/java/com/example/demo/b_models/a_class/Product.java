@@ -1,4 +1,4 @@
-package com.example.demo.b_models;
+package com.example.demo.b_models.a_class;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
