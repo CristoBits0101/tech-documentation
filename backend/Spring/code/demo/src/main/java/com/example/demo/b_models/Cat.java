@@ -8,10 +8,10 @@ import lombok.NoArgsConstructor;
 
 import java.util.Map;
 
-@Data
-@NoArgsConstructor
 @AllArgsConstructor
 @Component
+@Data
+@NoArgsConstructor
 public class Cat {
 
     private String name;

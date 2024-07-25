@@ -9,11 +9,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
-@NoArgsConstructor
 @AllArgsConstructor
 @Component
-public class OwnCat {
+@Data
+@NoArgsConstructor
+public class OwnCatDto {
 
     private String own;
     
