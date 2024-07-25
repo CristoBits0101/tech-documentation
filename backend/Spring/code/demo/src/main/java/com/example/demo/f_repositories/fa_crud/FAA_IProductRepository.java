@@ -1,9 +1,9 @@
 package com.example.demo.f_repositories.fa_crud;
 
-import com.example.demo.b_models.ba_class.BAB_ProductLombok;
+import com.example.demo.c_entities.CA_User;
 
 import org.springframework.data.repository.CrudRepository;
 
-public interface FAA_IProductRepository extends CrudRepository<BAB_ProductLombok, Long> {
+public interface FAA_IProductRepository extends CrudRepository<CA_User, Long> {
 
 }

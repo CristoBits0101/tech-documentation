@@ -1,11 +1,10 @@
 package com.example.demo.g_ioc.gl_files;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.util.List;
 
 @RestController
 public class GLA_ValueController {
