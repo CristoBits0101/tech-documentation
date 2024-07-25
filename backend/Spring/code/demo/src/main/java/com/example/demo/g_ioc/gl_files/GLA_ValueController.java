@@ -1,4 +1,4 @@
-package com.training.demo.controllers.read;
+package com.example.demo.g_ioc.gl_files;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 
 @RestController
-public class ValueController {
+public class GLA_ValueController {
 
     @Value("${config.developer}")
     private String developer;
