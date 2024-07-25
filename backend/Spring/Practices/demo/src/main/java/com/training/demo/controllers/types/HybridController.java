@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class HybridController {
+    
     @GetMapping("/cat")
     @ResponseBody
     public String hello() {
