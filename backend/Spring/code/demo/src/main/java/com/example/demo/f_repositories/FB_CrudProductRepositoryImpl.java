@@ -1,9 +1,9 @@
-package com.training.demo.repositories;
+package com.example.demo.f_repositories;
 
 import org.springframework.stereotype.Repository;
 
 @Repository("crudProductRepositoryImpl")
-public class CrudProductRepositoryImpl {
+public class FB_CrudProductRepositoryImpl {
 
 
 
