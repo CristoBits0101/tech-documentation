@@ -11,7 +11,7 @@ public class GAA_Mutable {
 
     private List<Integer> price = Arrays.asList(1, 2, 3);
 
-    @GetMapping("path")
+    @GetMapping("immutability")
     public List<Integer> getPrice() {
         price.stream().map(p -> p *= 2);
         return price;
