@@ -11,8 +11,6 @@ import com.example.demo.h_exceptions.hb_controller.hbb_advice.hbbc_exception.HBB
 import com.example.demo.h_exceptions.hc_services.hca_conditionals.HCAA_UserService;
 import com.example.demo.h_exceptions.hc_services.hcb_stream.HCBA_UserService;
 
-import io.micrometer.core.ipc.http.HttpSender.Response;
-
 import java.util.Optional;
 
 @RestController
@@ -31,7 +29,7 @@ public class HBA_RestController {
         return value;
     }
 
-    // 2. 
+    // 2. Error al parsear
     @GetMapping("/parse-exception")
     public int parse() {
         int value = Integer.parseInt("10x");
