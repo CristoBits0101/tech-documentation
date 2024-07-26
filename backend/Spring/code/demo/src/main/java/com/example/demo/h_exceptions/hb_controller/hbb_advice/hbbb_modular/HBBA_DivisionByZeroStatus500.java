@@ -7,14 +7,14 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.example.demo.h_exceptions.ha_model.HAA_Error;
+import com.example.demo.h_exceptions.ha_model.haa_advice.HAA_Error;
 
 @ControllerAdvice
 public class HBBA_DivisionByZeroStatus500 {
 
     // Error en el código no controlado
     @ExceptionHandler(ArithmeticException.class)
-    public ResponseEntity<?> divisionByZero(Exception e) {
+    public ResponseEntity<?> divisionByZero(ArithmeticException e) {
 
         HAA_Error error = new HAA_Error();
 

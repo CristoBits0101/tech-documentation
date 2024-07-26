@@ -1,4 +1,4 @@
-package com.example.demo.h_exceptions.ha_model;
+package com.example.demo.h_exceptions.ha_model.haa_advice;
 
 import java.util.Date;
 
