@@ -11,7 +11,7 @@ import org.springframework.web.servlet.NoHandlerFoundException;
 import com.example.demo.h_exceptions.ha_model.haa_advice.HAA_Error;
 
 @ControllerAdvice
-public class HBBC_PathNotFoundStatus404 {
+public class HBBD_PathNotFoundStatus404 {
 
     /**
      * CONFIGURAR EL "APPLICATION.PROPERTIES"

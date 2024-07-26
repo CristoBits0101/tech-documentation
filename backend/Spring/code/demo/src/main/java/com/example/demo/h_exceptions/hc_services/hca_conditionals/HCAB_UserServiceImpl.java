@@ -1,4 +1,4 @@
-package com.example.demo.h_exceptions.hc_services;
+package com.example.demo.h_exceptions.hc_services.hca_conditionals;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -8,11 +8,11 @@ import org.springframework.stereotype.Service;
 import com.example.demo.h_exceptions.ha_model.hab_domain.HABA_User;
 
 @Service
-public class HCB_UserServiceImpl implements HCA_UserService {
+public class HCAB_UserServiceImpl implements HCAA_UserService {
 
     private List<HABA_User> users;
 
-    public HCB_UserServiceImpl() {
+    public HCAB_UserServiceImpl() {
 
         this.users = new ArrayList<HABA_User>();
 
