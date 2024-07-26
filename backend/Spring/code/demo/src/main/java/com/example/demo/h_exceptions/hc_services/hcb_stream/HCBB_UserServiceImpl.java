@@ -11,6 +11,7 @@ import com.example.demo.h_exceptions.ha_model.hab_domain.HABA_User;
 @Service
 public class HCBB_UserServiceImpl implements HCBA_UserService {
 
+    // Se esta inyectando una lista que esta en un bean
     @Autowired
     private List<HABA_User> users;
 
