@@ -1,4 +1,4 @@
-package com.example.demo.g_ioc.gc_mutability.gcb_immutable.gcbb_stream;
+package com.example.demo.g_ioc.gc_mutability.gcb_immutable.gcbb_stream_object;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
