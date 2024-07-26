@@ -26,10 +26,10 @@ public class HBBA_HandlerExceptionController {
 
         HAA_Error error = new HAA_Error();
 
-        error.setError("Error: Division by zero.");
-        error.setMessage(e.getMessage());
-        error.setStatus(HttpStatus.INTERNAL_SERVER_ERROR.value());
-        error.setDate(new Date());
+        error.setError("Error: Division by zero.");           // Personalizado
+        error.setMessage(e.getMessage());                           // Pertenece a Exception e
+        error.setStatus(HttpStatus.INTERNAL_SERVER_ERROR.value());  // Pertenece a HttpStatus de Spring
+        error.setDate(new Date());                                  // Pertenece a java.util.Date
 
         return ResponseEntity
             .internalServerError()
