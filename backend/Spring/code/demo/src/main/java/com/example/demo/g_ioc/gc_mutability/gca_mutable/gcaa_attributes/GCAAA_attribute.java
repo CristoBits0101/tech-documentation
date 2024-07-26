@@ -1,4 +1,4 @@
-package com.example.demo.g_ioc.gc_mutability.gca_mutable;
+package com.example.demo.g_ioc.gc_mutability.gca_mutable.gcaa_attributes;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RequestMapping("/mutable-attribute")
 @RestController
-public class GCAA_attribute {
+public class GCAAA_attribute {
 
     /**
      * Mutable Singleton attributes
