@@ -1,4 +1,4 @@
-package com.example.demo.g_ioc.gl_files;
+package com.example.demo.g_ioc.ge_files;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RestController;
