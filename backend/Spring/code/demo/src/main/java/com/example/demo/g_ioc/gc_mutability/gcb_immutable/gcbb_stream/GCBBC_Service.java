@@ -11,36 +11,21 @@ import java.util.List;
 @Service
 public class GCBBC_Service {
 
-    // 4. Instance the repository
     @Autowired
     GCBBD_Repository repository;
 
-    // 5. Return the repository.findAll() method
     public List<GCBBA_Model> findAll() {
 
-        // 6. New list to retrieve
         List<GCBBA_Model> newList = new ArrayList<>();
 
-        // 7. Copy the original list to the new list
-        repository.findAll().stream().forEach(p -> {
-
+        repository.findAll().forEach(p -> {
             GCBBA_Model newModel = new GCBBA_Model();
-
-            // Name
-            String newName = p.getName();
-            newModel.setName(newName);
-
-            // Price
-            double newPrice = p.getPrice() * 2;
-            newModel.setPrice(newPrice);
-
+            newModel.setName(p.getName());
+            newModel.setPrice(p.getPrice() * 2);
             newList.add(newModel);
-
         });
 
-        // 8. Return the new list
         return newList;
-
     }
-
+    
 }
