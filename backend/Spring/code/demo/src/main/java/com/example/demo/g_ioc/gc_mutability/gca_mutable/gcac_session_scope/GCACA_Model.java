@@ -1,4 +1,4 @@
-package com.example.demo.g_ioc.gc_mutability.gca_mutable.gcbc_session_scope;
+package com.example.demo.g_ioc.gc_mutability.gca_mutable.gcac_session_scope;
 
 import org.springframework.stereotype.Component;
 
@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @Component
-public class GCBCA_Model {
+public class GCACA_Model {
 
     private String nombre;
     private double price;

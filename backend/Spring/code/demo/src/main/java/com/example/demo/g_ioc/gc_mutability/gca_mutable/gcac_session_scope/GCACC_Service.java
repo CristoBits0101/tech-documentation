@@ -1,4 +1,4 @@
-package com.example.demo.g_ioc.gc_mutability.gca_mutable.gcbc_session_scope;
+package com.example.demo.g_ioc.gc_mutability.gca_mutable.gcac_session_scope;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -6,15 +6,15 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class GCBCC_Service {
+public class GCACC_Service {
     
 
     // 4. Instance the repository
     @Autowired
-    GCBCD_Repository repository;
+    GCACD_Repository repository;
 
     // 5. Return the repository.findAll() method
-    public List<GCBCA_Model> findAll() {
+    public List<GCACA_Model> findAll() {
         /**
          * Datos Originales: Piensa en una lista como tu libro.
          * Stream: Es como tu lupa. Te permite ver y trabajar con los datos en la lista

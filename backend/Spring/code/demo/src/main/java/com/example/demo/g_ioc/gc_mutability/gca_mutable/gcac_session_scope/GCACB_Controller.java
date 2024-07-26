@@ -1,4 +1,4 @@
-package com.example.demo.g_ioc.gc_mutability.gca_mutable.gcbc_session_scope;
+package com.example.demo.g_ioc.gc_mutability.gca_mutable.gcac_session_scope;
 
 import java.util.List;
 
@@ -9,15 +9,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RequestMapping("/mutable-session-scope")
 @RestController
-public class GCBCB_Controller {
+public class GCACB_Controller {
 
     // 6. Instance the Service
     @Autowired
-    GCBCC_Service service;
+    GCACC_Service service;
 
     // 7. Return the service.findAll() method
     @GetMapping("/find-all")
-    public List<GCBCA_Model> findAll() {
+    public List<GCACA_Model> findAll() {
         return service.findAll();
     }
 
