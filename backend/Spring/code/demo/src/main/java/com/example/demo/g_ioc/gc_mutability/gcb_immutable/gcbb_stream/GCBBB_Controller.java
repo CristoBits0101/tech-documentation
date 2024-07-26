@@ -1,4 +1,4 @@
-package com.example.demo.g_ioc.gc_mutability.gca_mutable.gcab_stream;
+package com.example.demo.g_ioc.gc_mutability.gcb_immutable.gcbb_stream;
 
 import java.util.List;
 
@@ -7,17 +7,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RequestMapping("/mutable-stream")
+@RequestMapping("/immutable-stream")
 @RestController
-public class GCABB_Controller {
+public class GCBBB_Controller {
 
     // 6. Instance the Service
     @Autowired
-    GCABC_Service service;
+    GCBBC_Service service;
 
     // 7. Return the service.findAll() method
     @GetMapping("/find-all")
-    public List<GCABA_Model> findAll() {
+    public List<GCBBA_Model> findAll() {
         return service.findAll();
     }
 
