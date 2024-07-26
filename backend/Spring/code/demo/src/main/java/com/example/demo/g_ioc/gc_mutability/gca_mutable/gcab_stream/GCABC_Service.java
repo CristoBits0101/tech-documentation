@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
-@RequestMapping("/mutable-stream")
 @Service
 public class GCABC_Service {
 

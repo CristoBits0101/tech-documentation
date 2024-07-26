@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.Arrays;
 import java.util.List;
 
-@RequestMapping("/mutable-stream")
 @Repository
 public class GCABD_Repository {
 
