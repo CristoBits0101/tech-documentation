@@ -74,14 +74,27 @@ public class HBA_RestController {
     }
 
     /**
-     * 3.4
+     * 3.4.1
      * Validamos el error en está función
      */
     @GetMapping("/show/{id}")
-    public HABA_User show(@PathVariable Long id) {
+    public HABA_User findById4(@PathVariable Long id) {
         HABA_User user = userServiceOptional.findById(id).orElseThrow(() -> new HBBCA_UserNotFoundException("Error el usuario no existe!"));
         System.out.println(user.getLastname());
         return user;
+    }
+
+    
+    /**
+     * 3.4.2
+     * Manejando el optional directamente
+     */
+    @GetMapping("/show/{id}")
+    public ResponseEntity<Object> findById5(@PathVariable Long id) {
+        Optional<HABA_User> user = userServiceOptional.findById(id);
+        if (user.isEmpty())
+            return ResponseEntity.notFound().build();
+        return ResponseEntity.ok(user.orElseThrow());
     }
 
 }
