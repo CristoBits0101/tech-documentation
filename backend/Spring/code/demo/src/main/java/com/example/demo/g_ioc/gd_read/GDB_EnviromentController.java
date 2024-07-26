@@ -1,4 +1,4 @@
-package com.example.demo.g_ioc.ge_files;
+package com.example.demo.g_ioc.gd_read;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.util.HashMap;
 import java.util.Map;
 
-public class GLB_EnviromentController {
+public class GDB_EnviromentController {
 
     @Autowired
     Environment environment;

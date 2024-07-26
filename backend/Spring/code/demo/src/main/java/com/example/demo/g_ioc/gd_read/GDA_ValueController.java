@@ -1,4 +1,4 @@
-package com.example.demo.g_ioc.ge_files;
+package com.example.demo.g_ioc.gd_read;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RestController;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.util.List;
 
 @RestController
-public class GLA_ValueController {
+public class GDA_ValueController {
 
     @Value("${config.developer}")
     private String developer;

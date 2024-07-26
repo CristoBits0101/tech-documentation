@@ -1,5 +1,5 @@
 package com.example.demo.g_ioc.ga_stereotypes;
 
-public class GCA_Bean {
+public class GAA_Bean {
     
 }
