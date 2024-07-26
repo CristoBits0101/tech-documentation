@@ -27,10 +27,10 @@ public class HBBB_PathNotFoundStatus404 {
 
         HAA_Error error = new HAA_Error();
 
-        error.setError("Error: La ruta no funciona.");              // Personalizado
-        error.setMessage(e.getMessage());                           // Pertenece a Exception e
-        error.setStatus(HttpStatus.INTERNAL_SERVER_ERROR.value());  // Pertenece a HttpStatus de Spring
-        error.setDate(new Date());                                  // Pertenece a java.util.Date
+        error.setError("Error: La ruta no funciona."); // Personalizado
+        error.setMessage(e.getMessage());              // Pertenece a Exception e
+        error.setStatus(HttpStatus.NOT_FOUND.value()); // Pertenece a HttpStatus de Spring
+        error.setDate(new Date());                     // Pertenece a java.util.Date
 
         // return ResponseEntity
         //          .status("404")
