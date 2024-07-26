@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RequestMapping("/immutable-stream")
+@RequestMapping("/immutable-stream-clonable")
 @RestController
 public class GCBCB_Controller {
 
