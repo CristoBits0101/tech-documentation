@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ICA_ExampleController {
 
+    // ¡LOS INTERCEPTORES SE EJECUTAN ANTES Y DESPUÉS DE LA RESPUESTA!
     @GetMapping("example1")
     public Map<String, String> example1() {
         return Collections.singletonMap("message", "example1");

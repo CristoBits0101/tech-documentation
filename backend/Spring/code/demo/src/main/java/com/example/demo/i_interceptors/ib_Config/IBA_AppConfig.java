@@ -3,7 +3,9 @@ package com.example.demo.i_interceptors.ib_Config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.lang.NonNull;
 import org.springframework.web.servlet.HandlerInterceptor;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
@@ -20,5 +22,14 @@ public class IBA_AppConfig implements WebMvcConfigurer {
     @Autowired
     @Qualifier("loadingTimeInterceptor")
     private HandlerInterceptor timeInterceptor;
+
+    /**
+     * 6.1. Permite especificar en que rutas se ejecutan los interceptores
+     * 6.2. No se permiten retornos nulos
+     */
+    @Override
+    public void addInterceptors(@NonNull InterceptorRegistry registry) {
+        registry.addInterceptor(timeInterceptor).addPathPatterns("example1", "example3");
+    }
 
 }
