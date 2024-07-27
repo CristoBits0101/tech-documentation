@@ -18,6 +18,8 @@ public class JCA_AOP {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     /**
+     * 2. Configurar el aspecto
+     * 
      * Before                      -> Antés
      * execution                   -> Prefijo de la anotación
      * String Package.Clase.Method -> Nombre de la clase a mapear
