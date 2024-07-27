@@ -7,11 +7,13 @@ import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-@Aspect // Hay que indicar que es un aspecto
-@Component // Hay que indicar que es un componente en Spring Boot
-public class JCF_Around {
+@Order(1)   // Si hay varios aspecto mapeando un metódo este lo hace primero
+@Aspect     // Hay que indicar que es un aspecto
+@Component  // Hay que indicar que es un componente en Spring Boot
+public class JCF_Order {
 
     // 1. Para imprimir logs
     private Logger logger = LoggerFactory.getLogger(this.getClass());

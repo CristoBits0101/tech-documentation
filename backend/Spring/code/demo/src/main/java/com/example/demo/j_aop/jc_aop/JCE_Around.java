@@ -36,7 +36,9 @@ public class JCE_Around {
         Object result = null;
         try {
             logger.info("El metodo " + method + "() con los parametros " + args);
+            // proceed() Hace algo antés
             result = joinPoint.proceed();
+            // Después
             logger.info("El metodo " + method + "() retorna el resultado: " + result);
             return result;
         } catch (Throwable e) {
