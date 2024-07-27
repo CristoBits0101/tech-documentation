@@ -51,7 +51,7 @@ public class HBA_RestController {
      * ¡Si el objeto no tiene la propiedad inicializada es nulo!
      * Todo esto genera un null pointer exception.
      */
-    @GetMapping("/show/{id}")
+    @GetMapping("/show1/{id}")
     public HABA_User findById2(@PathVariable Long id) {
         HABA_User user = userService.findById(id);
         System.out.println(user.getHABB_Role());
@@ -62,7 +62,7 @@ public class HBA_RestController {
      * 3.3
      * Validamos el error en está función
      */
-    @GetMapping("/show/{id}")
+    @GetMapping("/show2/{id}")
     public HABA_User findById3(@PathVariable Long id) {
         HABA_User user = userService.findById(id);
         if (user == null)
@@ -75,7 +75,7 @@ public class HBA_RestController {
      * 3.4.1
      * Validamos el error en está función
      */
-    @GetMapping("/show/{id}")
+    @GetMapping("/show3/{id}")
     public HABA_User findById4(@PathVariable Long id) {
         HABA_User user = userServiceOptional.findById(id).orElseThrow(() -> new HBBCA_UserNotFoundException("Error el usuario no existe!"));
         System.out.println(user.getLastname());
@@ -87,7 +87,7 @@ public class HBA_RestController {
      * 3.4.2
      * Manejando el optional directamente
      */
-    @GetMapping("/show/{id}")
+    @GetMapping("/show4/{id}")
     public ResponseEntity<Object> findById5(@PathVariable Long id) {
         Optional<HABA_User> user = userServiceOptional.findById(id);
         if (user.isEmpty())

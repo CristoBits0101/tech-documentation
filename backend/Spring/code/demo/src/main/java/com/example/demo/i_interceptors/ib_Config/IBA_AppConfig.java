@@ -1,4 +1,4 @@
-package com.example.demo.i_interceptors.ib_Config;
+package com.example.demo.i_interceptors.ib_config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
