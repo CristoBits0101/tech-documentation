@@ -63,6 +63,7 @@ public class CalendarInterceptor implements HandlerInterceptor {
     }
 
     @Override
+    @SuppressWarnings("null")
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
             @Nullable ModelAndView modelAndView) throws Exception {
 

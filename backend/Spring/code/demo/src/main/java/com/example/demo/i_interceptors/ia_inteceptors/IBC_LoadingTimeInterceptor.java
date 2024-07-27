@@ -21,6 +21,7 @@ public class IBC_LoadingTimeInterceptor implements HandlerInterceptor {
     private static final Logger logger = LoggerFactory.getLogger(IBC_LoadingTimeInterceptor.class);
 
     @Override
+    @SuppressWarnings("null")
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 
         HandlerMethod controller = (HandlerMethod) handler;
@@ -43,6 +44,7 @@ public class IBC_LoadingTimeInterceptor implements HandlerInterceptor {
     }
 
     @Override
+    @SuppressWarnings("null")
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, @Nullable ModelAndView modelAndView) throws Exception {
         // No se necesita implementación aquí para este ejemplo
     }
