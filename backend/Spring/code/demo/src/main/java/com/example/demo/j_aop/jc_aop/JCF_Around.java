@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 @Aspect // Hay que indicar que es un aspecto
 @Component // Hay que indicar que es un componente en Spring Boot
-public class JCE_Around {
+public class JCF_Around {
 
     // 1. Para imprimir logs
     private Logger logger = LoggerFactory.getLogger(this.getClass());
@@ -27,7 +27,7 @@ public class JCE_Around {
      * - @AfterReturning,
      * - @AfterThrowing advice
      */
-    @Around("execution(String com.example.demo.j_aop.jb_service.JBA_GreetingService.sayHello(..))")
+    @Around("GreetingServicePointcuts.greetingLoggerPointCut()")
     public Object loggerAround(ProceedingJoinPoint joinPoint) throws Throwable {
 
         String method = joinPoint.getSignature().getName();
