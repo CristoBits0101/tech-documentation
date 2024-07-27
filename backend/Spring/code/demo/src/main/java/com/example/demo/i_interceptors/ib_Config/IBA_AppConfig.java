@@ -29,7 +29,9 @@ public class IBA_AppConfig implements WebMvcConfigurer {
      */
     @Override
     public void addInterceptors(@NonNull InterceptorRegistry registry) {
-        registry.addInterceptor(timeInterceptor).addPathPatterns("example1", "example3");
+        registry.addInterceptor(timeInterceptor).addPathPatterns("/example1", "/example3"); // Rutas sobre las que se ejecuta
+        registry.addInterceptor(timeInterceptor).addPathPatterns("/example/**");            // Solo Rutas con prefijo example 
+        registry.addInterceptor(timeInterceptor).excludePathPatterns("/example2");          // Rutas sobre las que no se ejecuta
     }
 
 }

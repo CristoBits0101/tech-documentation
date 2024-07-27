@@ -11,7 +11,8 @@ import org.springframework.web.method.HandlerMethod;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-// 1. ¡HAY QUE IMPLEMENTAR LA INTERFACE PARA QUE FUNCIONE!
+// 1.1. ¡HAY QUE IMPLEMENTAR LA INTERFACE PARA QUE FUNCIONE!
+// 1.2. SI SE RETORNA FALSE SE TERMINA LA EJECUCIÓN DE LA PETICIÓN
 /**
  * Se pueden usar para ver si el usuario ya está logeado
  * O para registrar peticiones al servidor etc...
