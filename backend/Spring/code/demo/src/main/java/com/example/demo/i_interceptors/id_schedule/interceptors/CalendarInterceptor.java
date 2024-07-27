@@ -25,6 +25,7 @@ public class CalendarInterceptor implements HandlerInterceptor {
     @Value("${config.calendar.close}")
     private Integer close;
 
+    @SuppressWarnings("null")
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
             throws Exception {
