@@ -11,8 +11,6 @@ import com.example.demo.h_exceptions.hb_controller.hbb_advice.hbbc_exception.HBB
 import com.example.demo.h_exceptions.hc_services.hca_conditionals.HCAA_UserService;
 import com.example.demo.h_exceptions.hc_services.hcb_stream.HCBA_UserService;
 
-import io.micrometer.core.ipc.http.HttpSender.Response;
-
 import java.util.Optional;
 
 @RestController
@@ -31,7 +29,7 @@ public class HBA_RestController {
         return value;
     }
 
-    // 2. 
+    // 2. Error al parsear
     @GetMapping("/parse-exception")
     public int parse() {
         int value = Integer.parseInt("10x");
@@ -74,14 +72,27 @@ public class HBA_RestController {
     }
 
     /**
-     * 3.4
+     * 3.4.1
      * Validamos el error en está función
      */
     @GetMapping("/show/{id}")
-    public HABA_User show(@PathVariable Long id) {
+    public HABA_User findById4(@PathVariable Long id) {
         HABA_User user = userServiceOptional.findById(id).orElseThrow(() -> new HBBCA_UserNotFoundException("Error el usuario no existe!"));
         System.out.println(user.getLastname());
         return user;
+    }
+
+    
+    /**
+     * 3.4.2
+     * Manejando el optional directamente
+     */
+    @GetMapping("/show/{id}")
+    public ResponseEntity<Object> findById5(@PathVariable Long id) {
+        Optional<HABA_User> user = userServiceOptional.findById(id);
+        if (user.isEmpty())
+            return ResponseEntity.notFound().build();
+        return ResponseEntity.ok(user.orElseThrow());
     }
 
 }
