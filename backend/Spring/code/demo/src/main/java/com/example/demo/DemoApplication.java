@@ -20,12 +20,12 @@ public class DemoApplication implements CommandLineRunner {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
+	/**
+	 * Desde main accedemos a repository sin controlador ni service 
+	 */
 	@Override
 	public void run(String... args) throws Exception {
-		
-		// Desde main accedemos a repository sin controlador ni service 
 		List<PersonEntity> persons = (List<PersonEntity>) repository.findAll();
-	
 	}
 
 }
