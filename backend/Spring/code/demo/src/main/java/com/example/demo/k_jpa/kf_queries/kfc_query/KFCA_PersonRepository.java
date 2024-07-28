@@ -9,9 +9,30 @@ import com.example.demo.k_jpa.kb_entities.KBA_PersonEntity;
 
 public interface KFCA_PersonRepository extends CrudRepository<KBA_PersonEntity, Long> {
 
-    @Query("select p from Person p where p.programmingLanguage=?1 and p.name=?2")
-    List<KBA_PersonEntity> buscarByProgrammingLanguage(String programmingLanguage, String name);
+    /**
+     * @Query   -> Define una consulta JPQL personalizada
+     * select   -> Indica que queremos seleccionar datos
+     * p        -> Para indicar que se traíga el objeto completo
+     * Person p -> Entidad y su alias
+     * Return   -> Devuelve todos los regístros porque no hay condiciones
+     */
 
+    @Query("select p from Person p")
+    List<KBA_PersonEntity> buscarByProgrammingLanguageA(String programmingLanguage, String name);
+
+    /**
+     * p.                  -> Alias que hace referencia a la entidad Person
+     * programmingLanguage -> Atributo de clase que equivale a columna de tabla
+     * =?1                 -> Asigna el parámetro uno como valor de condición
+     * =?2                 -> Asigna el parámetro dos como valor de condición
+     */
+    @Query("select p from Person p where p.programmingLanguage=?1 and p.name=?2")
+    List<KBA_PersonEntity> buscarByProgrammingLanguageB(String programmingLanguage, String name);
+
+    /**
+     * p    -> Ahora almacena solo 2 atributos del objeto
+     * List -> Se devuelve una lista de regístros con las columnas en cada posición
+     */
     @Query("select p.name, p.programmingLanguage from Person p")
     List<Object[]> obtenerPersonData();
 
