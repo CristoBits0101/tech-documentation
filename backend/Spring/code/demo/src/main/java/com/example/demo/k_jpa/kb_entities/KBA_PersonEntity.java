@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "persons")
-public class PersonEntity {
+public class KBA_PersonEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,10 +23,10 @@ public class PersonEntity {
 
     // Con constructor personalizado obliga a vacío en entity
     // Sin constructor personalizado no requiere uno vacío
-    public PersonEntity() {
+    public KBA_PersonEntity() {
     }
 
-    public PersonEntity(Long id, Long name, Long lastname, Long programmingLanguage) {
+    public KBA_PersonEntity(Long id, Long name, Long lastname, Long programmingLanguage) {
         this.id = id;
         this.name = name;
         this.lastname = lastname;
