@@ -14,8 +14,8 @@ import jakarta.persistence.Table;
 /**
  * 1. Embedded
  * 2. toString
- * 3. setCreated
- * 4. setUpdated
+ * 3. setCreated (controller)
+ * 4. setUpdated (controller)
  */
 @Entity
 @Table(name = "persons")
