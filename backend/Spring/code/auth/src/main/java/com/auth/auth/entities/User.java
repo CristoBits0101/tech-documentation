@@ -34,8 +34,7 @@ public class User {
 
     /**
      * When calling the user we want to see their roles and not the other way around
-     * There is no cascading relationship because the role is created separately
-     * from the user
+     * There is no cascading relationship because the role is created separately from the user
      */
     @ManyToMany
     @JoinTable(
