@@ -10,6 +10,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 import jakarta.persistence.UniqueConstraint;
 
 @Entity
@@ -22,7 +23,11 @@ public class User {
     private String username;
     private String password;
 
-    // When calling the user we want to see their roles and not the other way around
+    /**
+     * When calling the user we want to see their roles and not the other way around
+     * There is no cascading relationship because the role is created separately
+     * from the user
+     */
     @ManyToMany
     @JoinTable(
             // Table to which it relates
@@ -34,6 +39,18 @@ public class User {
             // Ensures that there are no duplicate entries between user_id and role_id
             uniqueConstraints = { @UniqueConstraint(columnNames = { "user_id", "role_id" }) })
     private List<Role> roles;
+
+    // It is not a field in the users table
+    @Transient
+    private boolean admin;
+
+    public boolean isAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(boolean admin) {
+        this.admin = admin;
+    }
 
     public String getUsername() {
         return username;
