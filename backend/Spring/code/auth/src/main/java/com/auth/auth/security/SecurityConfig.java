@@ -12,19 +12,20 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 public class SecurityConfig {
 
     /**
-     * Belongs to Spring Security
-     * Pertenece a Spring Security
+     * 1.1. Pertenece a Spring Security
+     * 1.2. Sirve para encriptar la contraseña
      * 
      * @return BCryptPasswordEncoder()
      */
     @Bean
-    public PasswordEncoder passwordEncoder() {
+    PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
     /**
-     * Sirve para gestionar los accesos
-     * HttpSecurity se inyecta automáticamente
+     * 2.1. Pertenece a Spring Security
+     * 2.2. Sirve para gestionar los accesos
+     * 2.3. HttpSecurity se inyecta automáticamente
      * 
      * @param httpSecurity
      * @return SecurityFilterChain
@@ -33,12 +34,12 @@ public class SecurityConfig {
     @Bean
     SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
         httpSecurity
-                .authorizeHttpRequests(authz -> authz                             // 1. Configuración de peticiones HTTP
-                        .requestMatchers("/users").permitAll()        // 2. Permisos para /users sin autentificación
-                        .anyRequest().authenticated())                            // 3. El resto de rutas requieren autentificación
-                .csrf(csrf -> csrf                                                // 4. Configuración para el token de formularios
-                        .disable())                                               // 5. Protege de hacks incluidos los formularios
-                .sessionManagement(management -> management                       // 6. Configuración de la session HTTP
+                .authorizeHttpRequests(authz -> authz // 1. Configuración de peticiones HTTP
+                        .requestMatchers("/users").permitAll() // 2. Permisos para /users sin autentificación
+                        .anyRequest().authenticated()) // 3. El resto de rutas requieren autentificación
+                .csrf(csrf -> csrf // 4. Configuración para el token de formularios
+                        .disable()) // 5. Protege de hacks incluidos los formularios
+                .sessionManagement(management -> management // 6. Configuración de la session HTTP
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS)); // 7. Sin estado a través de token
         return httpSecurity.build();
     }
