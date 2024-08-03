@@ -1,4 +1,4 @@
-package com.andres.curso.springboot.app.springbootcrud.security.filter;
+package com.example.demo.m_jwt.mb_auth_bidirectional.src.main.java.com.auth.auth.security.filter;
 
 import static com.andres.curso.springboot.app.springbootcrud.security.TokenJwtConfig.CONTENT_TYPE;
 import static com.andres.curso.springboot.app.springbootcrud.security.TokenJwtConfig.HEADER_AUTHORIZATION;

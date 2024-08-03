@@ -1,4 +1,4 @@
-package com.andres.curso.springboot.app.springbootcrud.security.filter;
+package com.example.demo.m_jwt.mb_auth_bidirectional.src.main.java.com.auth.auth.security.filter;
 
 import java.io.IOException;
 import java.util.Collection;
@@ -27,19 +27,14 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import static com.andres.curso.springboot.app.springbootcrud.security.TokenJwtConfig.*;
 
-/**
- * Este filtro es para que se pueda autentificar los usuarios
- */
 public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
-    // Se inicializa vía constructor
     private AuthenticationManager authenticationManager;
 
     public JwtAuthenticationFilter(AuthenticationManager authenticationManager) {
         this.authenticationManager = authenticationManager;
     }
 
-    // Aquí se intenta autentificar con una petición y una respuesta
     @Override
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response)
             throws AuthenticationException {
@@ -60,30 +55,25 @@ public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilte
             e.printStackTrace();
         }
 
-        // Aquí se autentica al usuario
         UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(username,
                 password);
 
         return authenticationManager.authenticate(authenticationToken);
     }
 
-    /**
-     * Si todo sale bien generamos un token
-     * Hay que descargar la dependencia JWT
-     */
     @Override
     protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain,
             Authentication authResult) throws IOException, ServletException {
 
-        org.springframework.security.core.userdetails.User user = (org.springframework.security.core.userdetails.User) authResult
-                .getPrincipal();
+        org.springframework.security.core.userdetails.User user = (org.springframework.security.core.userdetails.User) authResult.getPrincipal();
         String username = user.getUsername();
         Collection<? extends GrantedAuthority> roles = authResult.getAuthorities();
 
         Claims claims = Jwts.claims()
                 .add("authorities", new ObjectMapper().writeValueAsString(roles))
                 .add("username", username)
-                .build();
+        .build();
+
 
         String token = Jwts.builder()
                 .subject(username)
