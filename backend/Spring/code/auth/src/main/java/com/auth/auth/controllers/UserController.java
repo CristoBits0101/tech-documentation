@@ -43,6 +43,12 @@ public class UserController {
 
     }
 
+    @PostMapping("/register")
+    public ResponseEntity<?> registerUser(@Valid @RequestBody User user, BindingResult result) {
+        user.setAdmin(false);
+        return createUser(user, result);
+    }
+
     private ResponseEntity<?> validation(BindingResult result) {
 
         Map<String, String> errors = new HashMap<>();
