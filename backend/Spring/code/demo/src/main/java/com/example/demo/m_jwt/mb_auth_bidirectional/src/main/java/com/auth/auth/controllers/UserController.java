@@ -1,4 +1,4 @@
-package com.auth.auth.controllers;
+package com.example.demo.m_jwt.mb_auth_bidirectional.src.main.java.com.auth.auth.controllers;
 
 import java.util.HashMap;
 import java.util.List;

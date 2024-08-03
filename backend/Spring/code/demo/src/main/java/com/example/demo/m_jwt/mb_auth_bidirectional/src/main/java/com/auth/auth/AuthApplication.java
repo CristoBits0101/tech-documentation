@@ -1,4 +1,4 @@
-package com.auth.auth;
+package com.example.demo.m_jwt.mb_auth_bidirectional.src.main.java.com.auth.auth;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
