@@ -6,4 +6,4 @@ type GameBoard = [                     // Cantidad de posiciones que tiene la ma
     [CellValue, CellValue, CellValue]
 ]
 
-const gameBoard: GameBoard[][]         // Inicialización 
+const gameBoard: GameBoard[][]         // Inicialización
