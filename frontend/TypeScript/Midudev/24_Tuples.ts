@@ -4,7 +4,12 @@
  */
 
 // 24.1. Definición de tupla
-type RGB = [number, number, number]
+// type RGB = [number, number, number]
 
 const black: RGB = [0, 0, 0]
-const white: RGB = [255, 255, 255]
+
+// 24.2. Esto no se debería	hacer la tupla ahora tiene 4 posiciones
+black.push(4)
+
+// 24.3. Con readonly se soluciona
+type RGB = readonly [number, number, number]
