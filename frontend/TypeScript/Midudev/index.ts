@@ -193,8 +193,63 @@ type HeroSummaryThree = {
 }
 
 // 21. Union types seria como un enum
-type HeroPowerScale = 'low' | 'medium' |'high'
+type HeroPowerScale = 'low' | 'medium' | 'high'
 
 // 22. Tambien se puede indicar varios tipos para una variable
 let monthly: number | string = 'Enero'
 monthly = 1
+
+// 23. Interception types combina varios objetos con sus tipos (AND)
+type HeroBasicInfo = {
+    name: string,
+    age: number,
+}
+
+type HeroProperties = {
+    readonly id?: HeroId,
+    isActive?: boolean
+    powerScale?: HeroPowerScale,
+}
+
+type HeroFusion = HeroBasicInfo & HeroProperties
+
+// 24. Type indexing
+type HeroPropertiesTwo = {
+    isActive: boolean
+    address: {
+        planet: string,
+        city: string,
+    }
+}
+
+// Almacena la dirección del hero un objeto dentro de la variable addressHero
+const addressHero: HeroPropertiesTwo['address'] = {
+    planet: 'Earth',
+    city: 'Madrid'
+}
+
+// 25. Type from value crea un tipo mediante un objeto ya creado
+const address: {
+    planet: string,
+    city: string,
+}
+
+// Crea un tipo a partir del objeto con typeof
+type Address = typeof address
+
+// Usa el nuevo tipo para inicializar el objeto
+const addressTwitch: Address = {
+    planet: 'Mars',
+    city: 'Twitch',
+}
+
+// 26. Utility
+function createAddress() {
+    return {
+        planet: 'Tierra',
+        city: 'Madrid'
+    }
+}
+
+// 27. Crea un type en base al retorno de una función
+type AddressReturn = ReturnType<typeof createAddress>
