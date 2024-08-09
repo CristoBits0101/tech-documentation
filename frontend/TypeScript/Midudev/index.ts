@@ -253,3 +253,31 @@ function createAddress() {
 
 // 27. Crea un type en base al retorno de una función
 type AddressReturn = ReturnType<typeof createAddress>
+
+// 28. Arrays estructura no valida
+const language = [] // Declaras un array never que siempre está vacío
+
+language.push('Javascript')
+
+// 29. Arrays con tipos estructurados
+const languageTwo: string[] = []        // Opción a
+const languageThree: Array<string> = [] // Opción b
+
+languageTwo.push('Javascript')
+
+// 30. Arrays con varios tipos
+const languageFour: string[] | number[] = [] // Solo puede ser de string o de números
+const languageFive: (string | number)[] = [] // Puede almacenar string o números
+
+// 31. Arrays de typos
+const languageSix: Hero[] = []
+
+// 32. Typar matrices con Union types
+type CellValue = 'X' | 'O' | ''         // El tipo de string que puede tener en cada posición
+type GameBoard = [                      // Cantidad de posiciones que tiene la matriz, es una tupla
+    [CellValue, CellValue, CellValue],
+    [CellValue, CellValue, CellValue],
+    [CellValue, CellValue, CellValue]
+]
+
+const gameBoard: GameBoard[][]          // Inicialización 
