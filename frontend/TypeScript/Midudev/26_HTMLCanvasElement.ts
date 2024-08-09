@@ -1,4 +1,4 @@
-const canvas = document.createElement('canvas') as HTMLCanvasElement;
+const canvas = document.createElement('canvas')
 
 /**
  * Si lo encuentra devuelte HTMLElement
@@ -6,6 +6,6 @@ const canvas = document.createElement('canvas') as HTMLCanvasElement;
  * Para saber si es canvas usar la propiedad HTMLCanvasElement
  * HTMLCanvasElement es porque canvas no es un elemento HTML
  */
-if (canvas !== null) {
+if (canvas instanceof HTMLCanvasElement) {
     const ctx = canvas.getContext('2d');
 }
