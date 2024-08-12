@@ -1,10 +1,12 @@
 # Tecnologías:
+
     - TypeScript
     - React
     - Java
     - Spring
 
 # Funcionalidades:
+
     - Autenticación:
         • Conectar mediante Google y Meta.
         • Login de usuarios.
@@ -38,6 +40,7 @@
         • Eliminar cuenta.
 
 # Especificaciones:
+
     - API RESTful.
     - Arquitectura de microservicios.
     - Arquitectura Hexagonal.
