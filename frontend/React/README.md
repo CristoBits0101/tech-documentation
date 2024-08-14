@@ -44,5 +44,6 @@
     - API RESTful.
     - Arquitectura de microservicios.
     - Arquitectura Hexagonal.
+    - Arquitectura Screaming.
     - Patrones de diseño.
     - WebSocket API.
