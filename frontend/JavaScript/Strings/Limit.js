@@ -1,7 +1,4 @@
-// Declaración.
 let texto = "Hello";
-let text  = "helLo";
+let text = "helLo";
 
-// Leer un texto de un punto a otro.
-let part1 = texto.slice(2, 3); console.log(part1);
-let part2 = texto.substring(2, 3); console.log(part2);
+console.log(texto.slice(2, 3)); // Muestra desde la posición 2 hasta antés de la 3.

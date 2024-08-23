@@ -1,5 +1,3 @@
-// Declaración.
 let texto = "Hello";
 
-// Ver la longitud de una cadena de caracteres.
-console.log(texto.length);
+console.log(texto.length); // Ver longitud de caracteres.

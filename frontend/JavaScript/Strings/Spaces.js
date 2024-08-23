@@ -1,11 +1,5 @@
-// Declaración.
 let text = "helLo";
 
-// Eliminar espacios iniciales y finales.
-text.trim();
-
-// Elimina los espacios iniciales.
-text.trimStart();
-
-// Elimina los espacios finales.
-text.trimEnd();
+text.trim();      // Eliminar espacios iniciales y finales.
+text.trimStart(); // Elimina los espacios iniciales.
+text.trimEnd();   // Elimina los espacios finales.
