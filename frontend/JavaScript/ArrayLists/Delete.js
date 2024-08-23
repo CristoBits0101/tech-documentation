@@ -1,3 +1,4 @@
+let array = new Array();
 
 array.pop();       // Borrar valor final.
 array.shift();     // Borrar valor el inicial.
