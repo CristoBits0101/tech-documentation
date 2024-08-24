@@ -1,17 +1,14 @@
 // Public.
-class Moto 
-{
-    marca;
+class Moto {
+  marca;
 }
 
 // Protected.
-class Coche 
-{
-    _marca;
+class Coche {
+  _marca;
 }
 
 // Private.
-class Camion 
-{
-    #marca;
+class Camion {
+  #marca;
 }
