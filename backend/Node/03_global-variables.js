@@ -1,2 +1,5 @@
-console.log(window);     // Variable global en navegador
-console.log(globalThis); // Variable global en node
+// 1) Variable global en navegador
+console.log(window);
+
+// 2) Variable global en node
+console.log(globalThis);
