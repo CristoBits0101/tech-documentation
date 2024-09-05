@@ -11,4 +11,4 @@ Promise.all([
   console.log(secondText);
 });
 
-// Note: Awiat se puede usar dentro de funciones autoinvocadas
+// Note: Ejecuta los procesos a la vez

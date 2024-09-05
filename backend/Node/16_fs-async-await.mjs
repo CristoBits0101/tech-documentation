@@ -7,4 +7,9 @@ const data = await fs("./data.txt", "utf8");
 // 3) Mostrar el contenido del fichero
 console.log(data);
 
-// Note: Awiat solo funciona con .mjs -> ES modules o funciones autoinvocadas
+/**
+ * Note:
+ * Awiat solo funciona con .mjs -> ES modules o con funciones autoinvocadas
+ * Realiza los procesos de manera secuencial los lee en orden y espera la respuesta
+ * La diferencia con las sincrónas es que no bloquea el programa
+ */
