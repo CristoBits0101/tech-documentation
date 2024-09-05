@@ -10,3 +10,11 @@
 # 3) Versión de node
 
     👉 node --version
+
+# 4) Instalar un paquete de node
+
+    👉 npm install react
+
+# 5) Desistalar un paquete de node
+
+    👉 npm uninstall react
