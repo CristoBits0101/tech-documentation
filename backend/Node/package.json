@@ -11,11 +11,11 @@
   "dependencies": {
     "node": "file:"
   },
-  "devDependencies": {
-    "standard": "^17.1.0"
-  },
-  "eslintConfig": {
-    "extends": "standard"
-  },
+  // "devDependencies": {
+  //   "standard": "^17.1.0"
+  // },
+  // "eslintConfig": {
+  //   "extends": "standard"
+  // },
   "description": ""
 }
