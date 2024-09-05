@@ -6,6 +6,6 @@ console.log(`Nombre:          ${os.platform()}`);
 console.log(`Versión:         ${os.release()}`);
 console.log(`Arquitectura:    ${os.arch()}`);
 console.log(`CPUs:            ${os.cpus().length}`);
-console.log(`Memoria libre:   ${(os.freemem()  / 1024 / 1024).toFixed(2)} MB`);
+console.log(`Memoria libre:   ${(os.freemem() / 1024 / 1024).toFixed(2)} MB`);
 console.log(`Memoria total:   ${(os.totalmem() / 1024 / 1024).toFixed(2)} MB`);
-console.log(`Días encendido:  ${(os.uptime()   / 60   /   60).toFixed(2)} horas`);
+console.log(`Días encendido:  ${(os.uptime() / 60 / 60).toFixed(2)} horas`);

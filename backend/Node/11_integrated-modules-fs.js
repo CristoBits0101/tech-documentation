@@ -32,4 +32,4 @@ if (fs.existsSync("./data.txt")) {
   console.log("File does not exist");
 }
 
-// 7) 
+// 7)
