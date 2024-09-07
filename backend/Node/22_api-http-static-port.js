@@ -4,6 +4,11 @@ const http = require('node:http')
 // 2) Crear un servidor web que maneja solicitudes
 const server = http.createServer((request, response) => {
   console.log('request received')
+
+  /**
+   * Cierra la conexión
+   * Envía la respuesta en texto plano
+   */
   response.end('Hola mundo')
 })
 
