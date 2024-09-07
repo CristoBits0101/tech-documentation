@@ -1,3 +1,4 @@
+// 1) Importamos el módulo de 
 const net = require('node:net')
 
 function findAvailablePort(desiredPort) {
