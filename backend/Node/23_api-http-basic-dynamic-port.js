@@ -9,7 +9,8 @@ const server = http.createServer((request, response) => {
   response.end('Hola mundo')
 })
 
-// 3) Establecer a través de que puerto se escuchan las solicitudes
-server.listen(3000, () => {
-  console.log('Server running on port 3000')
+// 3) Devuelve un puerto libre aleatorio
+server.listen(0, () => {
+  const address = server.address()
+  console.log(`server listening on port http://localhost:${address.port}`)
 })
