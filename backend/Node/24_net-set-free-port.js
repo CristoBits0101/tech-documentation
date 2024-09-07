@@ -15,7 +15,7 @@ function findAvailablePort(desiredPort) {
         resolve(port)
       })
     })
-    // Si ocurre un error durante la escucha, intenta con el siguiente puerto
+    // Si ocurre un evento de error durante la escucha, intenta con el siguiente puerto
     server.on('error', (err) => {
       if (err.code === 'EADDRINUSE') {
         findAvailablePort(0).then((port) => resolve(port))
