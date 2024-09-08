@@ -25,6 +25,9 @@ const processRequest = (req, res) => {
           })
           req.on('end', () => {
             const data = JSON.parse(body)
+            /**
+             * Step omitted: Save data on database
+             * */
             res.writeHead(201, {
               'Content-Type': 'application/json; charset=utf-8'
             })
