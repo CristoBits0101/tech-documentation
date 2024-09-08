@@ -10,7 +10,7 @@
 - y: Nuevas funcionalidades
 - z: Solución de bugs
 
-# Instalar un paquete de node:
+# Instalar un paquete de node
 
 - Copiar el comando desde npm
 - Importar la librería

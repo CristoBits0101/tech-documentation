@@ -3,13 +3,13 @@ const http = require('node:http')
 
 // 2) Importar función para encontrar un puerto libre
 const {
-  findAvailablePort,
+  findAvailablePort
 } = require('./25_set-free-port-advanced-dynamic-port.js')
 
-// 3)
+// 3) Imprimir las variables de entorno para depuración
 console.log(process.env)
 
-// 4)
+// 4) Establecer el puerto usando la variable de entorno o 3000 por defecto
 const desiredPort = process.env.PORT ?? 3000
 
 // 5) Crear un servidor web que maneja solicitudes

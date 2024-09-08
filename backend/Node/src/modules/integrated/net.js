@@ -2,7 +2,7 @@
 const net = require('node:net')
 
 // 2) Función para encontrar un puerto deseado disponible
-function findAvailablePort(desiredPort) {
+function findAvailablePort (desiredPort) {
   return new Promise((resolve, reject) => {
     // Creación de un servidor web.
     const server = net.createServer()

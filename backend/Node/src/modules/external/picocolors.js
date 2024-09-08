@@ -4,6 +4,7 @@ const pc = require('picocolors')
 
 const folder = process.argv[2] ?? '.'
 
+// eslint-disable-next-line space-before-function-paren
 async function ls(folder) {
   let files
   try {
