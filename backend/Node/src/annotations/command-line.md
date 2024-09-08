@@ -1,6 +1,10 @@
-# 1) Run file
+# 1) Ejecutar un script
 
+    <!-- No refresca los cambios -->
     👉 node script.js
+
+    <!-- Refresca los cambios -->
+    👉 node --watch script.js
 
 # 2) Iniciar un proyecto
 
