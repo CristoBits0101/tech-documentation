@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "02_print-console.js",
   "scripts": {
+    "dev": "nodemon src/api/exercise/server.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,6 +13,7 @@
     "node": "file:"
   },
   "devDependencies": {
+    "nodemon": "^3.1.4",
     "standard": "^17.1.0"
   },
   "eslintConfig": {

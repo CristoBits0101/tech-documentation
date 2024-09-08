@@ -6,6 +6,10 @@
     <!-- Refresca los cambios -->
     👉 node --watch script.js
 
+    <!-- Scripts de node -->
+    👉 npm run
+    👉 npm run script_alias
+
 # 2) Iniciar un proyecto
 
     👉 npm init
