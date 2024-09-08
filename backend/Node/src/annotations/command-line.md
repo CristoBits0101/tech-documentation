@@ -26,3 +26,11 @@
 # 5) Desistalar un paquete de node
 
     👉 npm uninstall react
+
+# 6) Instalar Express.js
+
+    <!-- Se va actualizando a la última versión -->
+    👉 npm install express
+
+    <!-- La última versión exacta -->
+    👉 npm install express -E
