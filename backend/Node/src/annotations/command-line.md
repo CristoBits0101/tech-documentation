@@ -14,6 +14,7 @@
 
     👉 npm init
     👉 npm init -y
+    👉 pnpm init
 
 # 3) Versión de node
 
