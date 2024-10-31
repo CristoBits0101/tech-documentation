@@ -56,6 +56,27 @@ const sumAges = arrayE.reduce(
   0
 )
 
+// Rest
+const arrayK = [1, 2, 3, 4, 5]
+
+function sum(...numbers) {
+  return numbers.reduce((a, b) => a + b, 0)
+}
+
+console.log(sum(...arrayK))
+
+// Replace
+arrayA.splice(2, 1, 'Replace')
+
+// Set
+const arrayL = new Set()
+arrayL.add('pepa')
+arrayL.delete('pepa')
+arrayL.clear()
+
+console.log(arrayL.has(3))
+console.log(arrayL.size())
+
 // Remove
 arrayC.shift()
 arrayC.shift(2, 1)
