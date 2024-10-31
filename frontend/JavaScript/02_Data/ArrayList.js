@@ -32,10 +32,6 @@ const arrayE = [
   { name: 'Toru', age: 6 },
 ]
 
-// Exists
-arrayA.some((element) => element === 'Exists')
-arrayI.some((element) => element.name === 'Cristo')
-
 // Filter
 const firstElement = array.find((element) => element.nombre === 'Cuenca')
 const newArray = array.filter((property) => property.edad > 32)
@@ -77,7 +73,17 @@ arrayL.clear()
 console.log(arrayL.has(3))
 console.log(arrayL.size())
 
+// Sort
+arrayK.sort((firstElement, secondElement) => firstElement - secondElement)
+arrayK.sort((firstElement, secondElement) => secondElement - firstElement)
+
 // Remove
 arrayC.shift()
 arrayC.shift(2, 1)
 arrayC.pop()
+
+// Verify
+arrayA.some((element) => element === 'Exists')
+arrayI.some((element) => element.name === 'Cristo')
+array.every((valor) => valor !== null)
+array.every((valor) => typeof valor === 'number' && valor > 0)
