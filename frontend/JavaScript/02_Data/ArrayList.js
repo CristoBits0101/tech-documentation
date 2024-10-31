@@ -3,8 +3,8 @@ arrayA.unshift('Initial value')
 arrayB.push('Last value')
 
 // Cast
-const arrayD = Array.from('data')
-const arrayE = arrayC.join(',')
+const arrayF = Array.from('data')
+const arrayG = arrayC.join(',')
 
 // Compare
 if (arrayA.join('') === arrayB.join('')) console.log(true)
@@ -16,17 +16,18 @@ if (
   console.log(true)
 
 // Concatenate
-const arrayF = [...arrayA, ...arrayB, ...arrayC]
-const arrayG = [arrayA, arrayB]
-const arrayH = arrayA.map((nameVariable) => {
+const arrayH = [...arrayA, ...arrayB, ...arrayC]
+const arrayI = [arrayA, arrayB]
+const arrayJ = arrayA.map((nameVariable) => {
   return nameVariable.concat(' l')
 })
 
 // Create
 const arrayA = []
 const arrayB = [undefined, null, false, 0, '']
-const arrayC = new Array(3)
-const arrayI = [
+const arrayC = new Array(undefined, null, false, 0, '')
+const arrayD = new Array(3)
+const arrayE = [
   { name: 'Cristo', age: 36 },
   { name: 'Toru', age: 6 },
 ]
@@ -40,8 +41,20 @@ const firstElement = array.find((element) => element.nombre === 'Cuenca')
 const newArray = array.filter((property) => property.edad > 32)
 const partialArray = array.slice(2, 3)
 
+// For
+for (let i = 0; i < arrayA.length; i++) console.log(arrayA[i])
+
 // Keys
 const indices = Array.from(arrayA.keys())
+
+// Modify
+lista3[2] = `a`
+
+// Reduce
+const sumAges = arrayE.reduce(
+  (accumulator, element) => accumulator + element.edad,
+  0
+)
 
 // Remove
 arrayC.shift()
