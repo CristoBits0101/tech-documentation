@@ -1,13 +1,22 @@
-let cadena = "Individualizar";
-let array = Array.from(cadena);           // ["I", "n", "d", ...]
-const indices = Array.from(array.keys()); // [0, 1, 2, ..., 12]
+let cadena = 'Individualizar'
+let array = Array.from(cadena) // ["I", "n", "d", ...]
 
-let resultado = indices                   // Duplicar las letras.
+console.log('Array: ', array)
+console.log('Keys: ', array.keys())
+
+/**
+ * 1. Keys obtiene las claves
+ * 2. Array.from las parsea a un array
+ */
+const indices = Array.from(array.keys())
+
+console.log('Indices: ', indices)
+
+// Duplicar las letras en los índices pares
+let resultado = indices
   .map((index) => {
-    return index % 2 === 0   ? 
-      array[index].repeat(2) : 
-      array[index];
+    return index % 2 === 0 ? array[index].repeat(2) : array[index]
   })
-  .join("");
+  .join('')
 
-console.log(resultado);
+console.log(resultado)
