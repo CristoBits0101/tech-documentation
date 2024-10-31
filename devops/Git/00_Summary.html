@@ -1,4 +1,4 @@
-t<ol>
+<ol>
     <li>
         ssh-keygen -t rsa -b 4096 -C "email"            <!-- Genera una clave publica para conectar a Git                       -->
         sfdas                                           <!-- Escribes un nombre a los archivos de la clave                      -->
@@ -165,5 +165,12 @@ t<ol>
     </li>
     <li>
         hook post-commit                                <!-- Se ejecuta despúes del commit y se usa para enviar correos         -->
+    </li>
+    <li>
+        git reset commit --amend -m                     <!-- Cambiar el mensaje del último commit no pusheado                   -->
+        git reset --soft HEAD~1                         <!-- Revierte el último commit y mantiene los cambios en local          -->
+        git reset --hard HEAD~1                         <!-- Revierte el último commit y no mantiene los cambios locales        -->
+        git log --online                                <!-- Indentificar un commit pusheado                                    -->
+        git revert 3hu32b5                              <!-- Revierte el commit con los cambios pusheados                       -->
     </li>
 </ol>
