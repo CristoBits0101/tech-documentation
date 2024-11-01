@@ -10,16 +10,16 @@ function myAsynchronous(params) {
  *  - Decide si un valor ingresado es válido o no.
  */
 const myPromise = new Promise((resolve, reject) => {
-  const i = Math.floor(Math.random() * 2);
+  const i = Math.floor(Math.random() * 2)
   if (i !== 0) {
-    resolve();
+    resolve()
   } else {
-    reject();
+    reject()
   }
-});
+})
 
 // Se ejecuta cuando es verdadero, atrapa cuando es falso y siempre se ejecuta.
 myPromise
-  .then(() => console.log("Ejecución correcta"))
-  .catch(() => console.log("Error en la ejecución"))
-  .finally(() => console.log("Siempre se ejecuta"));
+  .then(() => console.log('Ejecución correcta'))
+  .catch(() => console.log('Error en la ejecución'))
+  .finally(() => console.log('Siempre se ejecuta'))
