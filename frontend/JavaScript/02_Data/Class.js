@@ -34,3 +34,19 @@ class Constructor {
     this.#country = value
   }
 }
+
+class Peon extends Constructor {
+  color
+  constructor(name, age, country, color) {
+    super(name, age, country)
+    this.color = color
+  }
+
+  static get color() {}
+  static set color(value) {
+    if (value === 'white' || value === 'black') this._color = value
+    else throw new Error('Color must be either white or black.')
+  }
+}
+
+color(red)
