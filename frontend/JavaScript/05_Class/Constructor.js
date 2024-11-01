@@ -1,23 +1,36 @@
-class CarModule {
-  color = 'black'
-  constructor() {
-    let milesDriven = 0
-    let speed = 0
-    this.accelerate = (amount) => {
-      speed += amount
-      milesDriven += speed
-    }
-    this.getMilesDriven = () => milesDriven
+class Constructor {
+  name
+  _age
+  #country
+
+  constructor(name, age, country) {
+    this.name = name
+    this._age = age
+    this.#country = country
   }
-}
 
-function car() {
-  const testCarModule = new CarModule()
+  get name() {
+    return this._name
+  }
 
-  testCarModule.accelerate(5)
-  testCarModule.accelerate(4)
+  set name(value) {
+    this._name = value
+  }
 
-  console.log(testCarModule.color)
-  console.log(testCarModule.getMilesDriven())
-  console.log(testCarModule.speed)
+  get age() {
+    return this._age
+  }
+
+  set age(value) {
+    if (value > 0) this._age = value
+    else throw new Error('Age must be positive.')
+  }
+
+  get country() {
+    return this.#country
+  }
+
+  set country(value) {
+    this.#country = value
+  }
 }
