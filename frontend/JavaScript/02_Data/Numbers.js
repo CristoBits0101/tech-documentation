@@ -19,9 +19,9 @@ let i = 1
 let j = 0.111111
 let k = 99.2323
 
-console.log(Math.round(i + j))
-console.log(j.toPrecision(2))
-console.log(k.toFixed(2))
+const closeInteger = Math.round(i + j)
+const quantityNumbers = j.toPrecision(2)
+const quantityDecimals = k.toFixed(2)
 
 // Type
 console.log(typeof a)

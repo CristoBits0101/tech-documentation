@@ -21,10 +21,10 @@ console.log(text.startsWith('Cristo'))
 console.log(text.endsWith('Cristo.'))
 
 // Length
-console.log(texto.length)
+console.log(text.length)
 
 // Limit
-console.log(texto.slice(2, 3))
+console.log(text.slice(2, 3))
 
 // Posisition
 console.log(text.indexOf('Cristo'))
