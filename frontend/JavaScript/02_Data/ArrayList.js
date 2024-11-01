@@ -18,8 +18,8 @@ if (
 // Concatenate
 const arrayH = [...arrayA, ...arrayB, ...arrayC]
 const arrayI = [arrayA, arrayB]
-const arrayJ = arrayA.map((nameVariable) => {
-  return nameVariable.concat(' l')
+const arrayJ = arrayA.map((t) => {
+  return t.concat(' l')
 })
 
 // Create
