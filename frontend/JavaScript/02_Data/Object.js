@@ -37,9 +37,11 @@ const objectList = [
   { nombre: Cristi, edad: 33 },
 ]
 
-objectList.sort = (a, b) => {
-  a.nombre - b.nombre
-}
+object_name.sort((a, b) => {
+  return a.nombre.localeCompare(b.nombre)
+})
+
+object_name.sort((a, b) => a.nombre - b.nombre);
 
 // Values
 const values = object.values()
