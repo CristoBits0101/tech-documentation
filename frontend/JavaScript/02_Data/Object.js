@@ -12,6 +12,14 @@ console.log(object_name)
 console.log(object_name.edad)
 console.log(object_name['edad'])
 
+// Console
+console.log('Screen message')
+console.info('Informative message')
+console.debug('Debug message')
+console.warn('Warning message')
+console.error('Error message')
+console.table(TablaUsuarios)
+
 // Copy
 const object_name2A = object_name1
 const object_name2B = { ...object_name1 }
@@ -22,6 +30,24 @@ const object_name = {
   pelo: `short`,
   edad: 17,
 }
+
+// Date
+const now1 = new Date()
+const now2 = new Date()
+const tenMilliseconds = new Date(10)
+const specificDate1 = new Date('2021-02-11')
+const specificDate2 = new Date(2022, 8, 7)
+
+const seconds = now1.getSeconds()
+const minutes = now1.getMinutes()
+const hour = now1.getHours()
+const dayOfWeek = now1.getDay()
+const dayOfMonth = now1.getDate()
+const month = now1.getMonth()
+const year = now1.getFullYear()
+
+console.log(`Dates are equal: ${now1.getTime() === now2.getTime()}`)
+console.log(`Date in English (GB) format: ${now1.toLocaleDateString('en-GB')}`)
 
 // Get
 console.log(Object.get(object_name, 'name'))

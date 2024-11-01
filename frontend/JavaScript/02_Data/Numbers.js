@@ -22,7 +22,3 @@ let k = 99.2323
 const closeInteger = Math.round(i + j)
 const quantityNumbers = j.toPrecision(2)
 const quantityDecimals = k.toFixed(2)
-
-// Type
-console.log(typeof a)
-console.log(isNaN(a))
