@@ -3,12 +3,11 @@ function toggleDropdown() {
 }
 
 window.addEventListener('click', (event) => {
-  if (!event.target.matches('.dropdown-button')) {
-    const dropdowns = document.getElementsByClassName('dropdown-content')
-    for (let i = 0; i < dropdowns.length; i++) {
-      const openDropdown = dropdowns[i]
-      if (openDropdown.classList.contains('show'))
-        openDropdown.classList.remove('show')
-    }
-  }
+  if (!event.target.closest('.dropdown-button'))
+    document
+      .querySelectorAll('.dropdown-content.show')
+      .forEach((dropdown) => {
+        dropdown.classList
+          .remove('show')
+    })
 })
