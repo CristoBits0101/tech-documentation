@@ -1,23 +1,23 @@
 class CarModule {
-  color = "black";
+  color = 'black'
   constructor() {
-    let milesDriven = 0;
-    let speed = 0;
+    let milesDriven = 0
+    let speed = 0
     this.accelerate = (amount) => {
-      speed += amount;
-      milesDriven += speed;
-    };
-    this.getMilesDriven = () => milesDriven;
+      speed += amount
+      milesDriven += speed
+    }
+    this.getMilesDriven = () => milesDriven
   }
 }
 
 function car() {
-  const testCarModule = new CarModule();
+  const testCarModule = new CarModule()
 
-  testCarModule.accelerate(5);
-  testCarModule.accelerate(4);
+  testCarModule.accelerate(5)
+  testCarModule.accelerate(4)
 
-  console.log(testCarModule.color);
-  console.log(testCarModule.getMilesDriven());
-  console.log(testCarModule.speed);
+  console.log(testCarModule.color)
+  console.log(testCarModule.getMilesDriven())
+  console.log(testCarModule.speed)
 }
