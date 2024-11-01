@@ -20,40 +20,15 @@ const objeto = {
   age: 30,
 }
 
-objeto.forEach((propiedad, indice) => {
-  console.log(propiedad.name, indice)
+Object.entries(objeto).forEach(([property, value], index) => {
+  console.log(`Property: ${property}, Value: ${value}, Index: ${index}`)
 })
 
 // ForIn
-let objeto_a_iterar = {
-  name1: 'Cristo',
-  name2: 'Rubén',
-  apellido1: 'Pérez',
-  apellido2: 'Suárez',
-}
+for (const key in objeto) console.log(key)
 
-for (const key in objeto_a_itera) {
-  console.log(key)
-}
-
-const objetoAIterar = [
-  { name1: 'Cristo', name2: 'Rubén', apellido1: 'Pérez', apellido2: 'Suárez' },
-  {
-    name1: 'Cristo2',
-    name2: 'Rubén2',
-    apellido1: 'Pérez2',
-    apellido2: 'Suárez2',
-  },
-]
-
-for (const objeto of objetoAIterar) {
-  console.log('Propiedades del objeto:', objeto)
-}
-
-for (let propiedadDelObjeto of objeto_a_iterar) {
-  console.log('Soy el for of')
-  console.log(propiedadDelObjeto)
-}
+// ForOf
+for (const property of objeto) console.log('Object properties: ', property)
 
 // Map
 const array = [1, 2, 3, 4, 5]
@@ -62,18 +37,6 @@ const explicitMap = array.map((value) => {
   return value.concat(' l')
 })
 
-// ObjecKeys
-const object = [
-  { name1: 'Cristo', name2: 'Rubén', apellido1: 'Pérez', apellido2: 'Suárez' },
-  {
-    name1: 'Cristo2',
-    name2: 'Rubén2',
-    apellido1: 'Pérez2',
-    apellido2: 'Suárez2',
-  },
-]
-
-for (const propiedad of Object.keys(object[0])) {
-  console.log('Soy el for of con el método keys')
-  console.log(propiedad, '\n')
-}
+// ObjectKeys
+for (const property of Object.keys(object[0]))
+  console.log('I am the for of with the keys method: ', property, '\n')
