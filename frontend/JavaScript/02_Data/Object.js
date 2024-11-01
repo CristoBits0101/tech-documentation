@@ -1,10 +1,13 @@
-// Call
-const object_name = {
-  ojos: 'blues',
-  pelo: `short`,
-  edad: 17,
+// Associative
+Object.entries(object_name).forEach(([key, value]) => {
+  console.log(`${key}: ${value}`)
+})
+
+for (const [key, value] of Object.entries(object_name)) {
+  console.log(`${key}: ${value}`)
 }
 
+// Call
 console.log(object_name)
 console.log(object_name.edad)
 console.log(object_name['edad'])
@@ -14,17 +17,29 @@ const object_name2A = object_name1
 const object_name2B = { ...object_name1 }
 
 // Create
+const object_name = {
+  ojos: 'blues',
+  pelo: `short`,
+  edad: 17,
+}
 
-// Examples
+// Get
+console.log(Object.get(object_name, 'name'))
+console.log(Object.get(object_name, 'age'))
 
-// Object.Entries()ForEach()
+// Keys
+const keys = Object.keys(obj)
 
-// Object.Entries()ForOf
+// Sortconst objectList = [
+const objectList = [
+  { nombre: Crista, edad: 31 },
+  { nombre: Criste, edad: 32 },
+  { nombre: Cristi, edad: 33 },
+]
 
-// Object.Get
+objectList.sort = (a, b) => {
+  a.nombre - b.nombre
+}
 
-// Object.Keys
-
-// Object.Values
-
-// Sort
+// Values
+const values = object.values()
