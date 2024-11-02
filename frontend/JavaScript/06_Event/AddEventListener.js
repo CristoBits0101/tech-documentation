@@ -13,7 +13,7 @@ document
   .getElementById('container')
   .addEventListener('contextmenu', (event) => {
     event.preventDefault()
-    console.log('Se ha abierto el menú contextual')
+    console.log('No te dejo ver el menu con click derecho.')
   })
 
 // MouseEnter
