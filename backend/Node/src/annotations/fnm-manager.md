@@ -8,7 +8,7 @@
 
 # 3) Check version
 
-    👉 fnm --version
+    👉  fnm--version
 
 # 4) Show commands
 
