@@ -16,4 +16,4 @@ let time = undefined
 let isDone: boolean = false
 
 // 1.6. Any
-let objeto
+let objeto: any
