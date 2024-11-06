@@ -25,10 +25,10 @@ npm install standard -D
 +
 
 "devDependencies": {
-"standard": "^17.1.0"
+    "standard": "^17.1.0"
 },
 "eslintConfig": {
-"extends": "standard"
+    "extends": "standard"
 }
 
 +
