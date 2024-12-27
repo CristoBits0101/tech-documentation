@@ -1,9 +1,6 @@
 // Create
 sessionStorage.setItem('nombre', 'Cristo')
-sessionStorage.setItem(
-  'persona',
-  JSON.stringify({ nombre: 'Cristo', apellido: Suárez })
-)
+sessionStorage.setItem('persona', JSON.stringify({ nombre: 'Cristo', apellido: Suárez }))
 
 // Update
 sessionStorage.setItem('nombre', 'Rubén')

@@ -87,3 +87,7 @@ arrayA.some((element) => element === 'Exists')
 arrayI.some((element) => element.name === 'Cristo')
 array.every((valor) => valor !== null)
 array.every((valor) => typeof valor === 'number' && valor > 0)
+
+array.forEach(element => {
+  
+});
