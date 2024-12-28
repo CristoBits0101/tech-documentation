@@ -1,2 +1,0 @@
-<!--  -->
-${cmsfn.decode(content).text!}
