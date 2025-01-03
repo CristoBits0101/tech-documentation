@@ -1,4 +1,8 @@
-
+/**
+ * Es un tipo de dato
+ * Es un valor
+ */
+undefined
 
 // Variable no inicializada
 let x
