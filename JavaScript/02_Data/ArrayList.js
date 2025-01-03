@@ -1,8 +1,10 @@
+// Declaración
 const lista = []
 
-// Add
-arrayA.unshift('Initial value')
-arrayB.push('Last value')
+// Modificar
+lista[0] = 0
+lista.unshift('Valor al inicio')
+lista.push('Valor al final')
 
 // Cast
 const arrayF = Array.from('data')
