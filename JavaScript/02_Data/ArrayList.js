@@ -57,7 +57,6 @@ const arrayE = [
   { nombre: 'Maria', edad: 35 },
 ];
 
-// Calculamos la suma de las edades
 const sumAges = arrayE.reduce(
   (accumulator, element) => accumulator + element.edad,
   0
@@ -69,11 +68,14 @@ console.log(sumAges); // Salida: 110
 // 9. Rest: Trabajar con el operador rest y spread
 const arrayK = [1, 2, 3, 4, 5]
 function sum(...numbers) {
-  return numbers.reduce((a, b) => a + b, 0)
+  // Suma al acumulador el elemento
+  // El acumulador empieza en 0
+  return numbers.reduce((a, e) => a + e, 0)
 }
 console.log(sum(...arrayK))
 
 // 10. Replace: Reemplazar elementos en un array
+// startIndex, deleteQuantity, (optional) replaceWith a value
 arrayA.splice(2, 1, 'Replace')
 
 // 11. Set: Trabajar con conjuntos (Set)
