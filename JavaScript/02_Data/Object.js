@@ -47,13 +47,3 @@ const keys = Object.keys(object_name)
 
 // 7. Values: Obtener todos los valores de un objeto
 const values = Object.values(object_name) // Devuelve un array
-
-// 8. Sort: Ordenar una lista de objetos
-const objectList = [
-  { nombre: 'Crista', edad: 31 },
-  { nombre: 'Criste', edad: 32 },
-  { nombre: 'Cristi', edad: 33 },
-]
-
-objectList.sort((a, b) => a.nombre.localeCompare(b.nombre)) // Ordenar por nombre
-objectList.sort((a, b) => a.edad - b.edad) // Ordenar por edad

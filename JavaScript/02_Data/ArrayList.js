@@ -55,15 +55,14 @@ const arrayE = [
   { nombre: 'Ana', edad: 30 },
   { nombre: 'Luis', edad: 20 },
   { nombre: 'Maria', edad: 35 },
-];
+]
 
 const sumAges = arrayE.reduce(
   (accumulator, element) => accumulator + element.edad,
   0
-);
+)
 
-console.log(sumAges); // Salida: 110
-
+console.log(sumAges) // Salida: 110
 
 // 9. Rest: Trabajar con el operador rest y spread
 const arrayK = [1, 2, 3, 4, 5]
@@ -100,3 +99,13 @@ array.every((valor) => valor !== null) // True si todos los elementos cumplen la
 
 // 15. forEach: Iterar sobre elementos de un array
 array.forEach((element) => {})
+
+// 16. Sort: Ordenar una lista de objetos
+const objectList = [
+  { nombre: 'Crista', edad: 31 },
+  { nombre: 'Criste', edad: 32 },
+  { nombre: 'Cristi', edad: 33 },
+]
+
+objectList.sort((a, b) => a.nombre.localeCompare(b.nombre)) // Ordenar por nombre
+objectList.sort((a, b) => a.edad - b.edad) // Ordenar por edad
