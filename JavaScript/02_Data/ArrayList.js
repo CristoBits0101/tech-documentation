@@ -25,8 +25,16 @@ if (
   console.log(true)
 
 // 5. Concatenar: Combinar o unir arrays
-const arrayH = [...arrayA, ...lista2, ...arrayC]  
+// Se crea una lista unica
+let listaA = [1, 2, 3, 4, 5]
+let listaB = [1, 2, 3, 4, 5]
+let listaC = [1, 2, 3, 4, 5]
+const lista4 = [...listaA, ...listaB, ...listaC]
+
+// Se crea una lista de listas
 const arrayI = [arrayA, lista2]
+
+// Se crea una lista de listas
 const arrayJ = arrayA.map((t) => {
   return t.concat(' l')
 })
