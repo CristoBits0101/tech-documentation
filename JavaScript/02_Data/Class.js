@@ -1,6 +1,9 @@
 class Constructor {
+  // public
   name
+  // private
   _age
+  // protected
   #country
 
   constructor(name, age, country) {
