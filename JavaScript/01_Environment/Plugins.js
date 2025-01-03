@@ -4,6 +4,6 @@
  * 3. JavaScript ES6 Code Snippets -> Syntax
  * 4.                  Live Server -> Server
  * 5.                     Prettier -> Formatting 
- * 6.                    Quokka.js -> 
+ * 6.                    Quokka.js -> Inline
  * 7.                   Error Lens -> Alerts
  */
