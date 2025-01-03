@@ -46,13 +46,25 @@ const partialArray = array.slice(2, 3) // Devuelve un array
 
 // 7. Recorrer: Recorrer arrays con bucles o iteradores
 for (let i = 0; i < arrayA.length; i++) console.log(arrayA[i])
-const indices = Array.from(arrayA.keys())
+
+const indices = Array.from(arrayA.keys()) // Devuelve un array con los indices
 
 // 8. Reduce: Reducir un array a un único valor
+const arrayE = [
+  { nombre: 'Juan', edad: 25 },
+  { nombre: 'Ana', edad: 30 },
+  { nombre: 'Luis', edad: 20 },
+  { nombre: 'Maria', edad: 35 },
+];
+
+// Calculamos la suma de las edades
 const sumAges = arrayE.reduce(
   (accumulator, element) => accumulator + element.edad,
   0
-)
+);
+
+console.log(sumAges); // Salida: 110
+
 
 // 9. Rest: Trabajar con el operador rest y spread
 const arrayK = [1, 2, 3, 4, 5]
