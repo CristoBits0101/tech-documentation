@@ -1,7 +1,7 @@
 # El spread operator (...): **Permite copiar los datos de arrays y objetos**
 #   El rest operator (...): **Permite recibir múltiples valores o valores restantes**
 #          Destructuración: **Para extraer atributos de objetos**
-#              Abstracción: **Permite saber las propiedades que objeto puede tener**
+#              Abstracción: **Para saber las propiedades que objeto puede tener**
 #       Patrones de diseño: **Singleton, Factory, Observer, Strategy**
 #  Patrones de renderizado: **CSR, SSR, Híbrido, SSG, ISR, On-Demand, Streaming, Isomórfico**
 #              Hidratación: **Hace interactivo un HTML estático**
