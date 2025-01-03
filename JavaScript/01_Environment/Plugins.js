@@ -1,8 +1,9 @@
 /**
- * 1. Bracket Pair Colorizer
- * 2. Import Cost
- * 3. JavaScript ES6 Code Snippets
- * 4. Live Server
- * 5. Prettier
- * 6. Quokka.js
+ * 1.       Bracket Pair Colorizer -> Bracket
+ * 2.                  Import Cost -> Size
+ * 3. JavaScript ES6 Code Snippets -> Syntax
+ * 4.                  Live Server -> Server
+ * 5.                     Prettier -> Formatting 
+ * 6.                    Quokka.js -> 
+ * 7.                   Error Lens -> Alerts
  */

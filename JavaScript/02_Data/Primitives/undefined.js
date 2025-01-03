@@ -1,15 +1,14 @@
 /**
- * Es un tipo de dato
- * Es un valor
+ * It is a primitive data type
+ * It is an assignable value
+ * It represents the absence of value
  */
 undefined
 
-// Variable no inicializada
+// Uninitialized variable without a value
 let x
 console.log(x)
 
-// Propiedad no definida
+// Undefined property that does not exist
 const obj = {}
 console.log(obj.name)
-
-// 
