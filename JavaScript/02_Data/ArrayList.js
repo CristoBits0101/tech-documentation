@@ -91,8 +91,8 @@ arrayK.sort((firstElement, secondElement) => firstElement - secondElement)
 arrayK.sort((firstElement, secondElement) => secondElement - firstElement)
 
 // 13. Remove: Eliminar elementos de un array
-arrayC.shift()
-arrayC.pop()
+arrayC.shift() // remove first element
+arrayC.p op() // remove second element
 
 // 14. Verify: Verificar condiciones en arrays
 arrayA.some((element) => element === 'Exists')
