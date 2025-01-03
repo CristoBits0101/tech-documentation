@@ -16,11 +16,11 @@ const lista = Array.from('data')
 const cadena = ahoraSoyUnaLista.join(', ')
 
 // 4. Comparar: Comparar arrays para determinar igualdad
-if (arrayA.join('') === lista2.join('')) console.log(true)
-if (arrayA.join('') !== lista2.join('')) console.log(true)
+if (arrayA.join('') === lista2.join('')) console.log(true) // Devuelve true o false
+if (arrayA.join('') !== lista2.join('')) console.log(true) // Devuelve true o false
 if (
   arrayA.length === lista2.length &&
-  arrayA.every((element, index) => element === lista2[index])
+  arrayA.every((element, index) => element === lista2[index]) // Devuelve true o false
 )
   console.log(true)
 
@@ -36,13 +36,13 @@ const arrayI = [arrayA, lista2]
 
 // Se crea una lista de listas
 const arrayJ = arrayA.map((t) => {
-  return t.concat(' l')                                                   // Devuelve un array
+  return t.concat(' l') // Devuelve un array
 })
 
 // 6. Filtrar: Seleccionar elementos de un array
 const firstElement = array.find((element) => element.nombre === 'Cuenca') // Devuelve un elemento
-const newArray = array.filter((property) => property.edad > 32)           // Devuelve un array
-const partialArray = array.slice(2, 3)                                    // Devuelve un array
+const newArray = array.filter((property) => property.edad > 32) // Devuelve un array
+const partialArray = array.slice(2, 3) // Devuelve un array
 
 // 7. Recorrer: Recorrer arrays con bucles o iteradores
 for (let i = 0; i < arrayA.length; i++) console.log(arrayA[i])
