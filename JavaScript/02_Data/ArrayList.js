@@ -1,3 +1,5 @@
+const lista = []
+
 // Add
 arrayA.unshift('Initial value')
 arrayB.push('Last value')
@@ -25,8 +27,6 @@ const arrayJ = arrayA.map((t) => {
 // Create
 const arrayA = []
 const arrayB = [undefined, null, false, 0, '']
-const arrayC = new Array(undefined, null, false, 0, '')
-const arrayD = new Array(3)
 const arrayE = [
   { name: 'Cristo', age: 36 },
   { name: 'Toru', age: 6 },
@@ -42,9 +42,6 @@ for (let i = 0; i < arrayA.length; i++) console.log(arrayA[i])
 
 // Keys
 const indices = Array.from(arrayA.keys())
-
-// Modify
-lista3[2] = `a`
 
 // Reduce
 const sumAges = arrayE.reduce(
@@ -88,6 +85,4 @@ arrayI.some((element) => element.name === 'Cristo')
 array.every((valor) => valor !== null)
 array.every((valor) => typeof valor === 'number' && valor > 0)
 
-array.forEach(element => {
-  
-});
+array.forEach((element) => {})
