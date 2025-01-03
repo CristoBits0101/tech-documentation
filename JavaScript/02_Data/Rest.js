@@ -1,6 +1,6 @@
 // **Ejemplo 1: Agrupar elementos restantes en arrays**
 const numbers = [10, 20, 30, 40, 50]
-const [first, second, ...rest] = numbers
+const [first, second, ...arrayRest] = numbers // 10, 20, array
 
 console.log(first)  // 10: El primer elemento del array
 console.log(second) // 20: El segundo elemento del array
