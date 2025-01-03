@@ -36,13 +36,13 @@ const arrayI = [arrayA, lista2]
 
 // Se crea una lista de listas
 const arrayJ = arrayA.map((t) => {
-  return t.concat(' l')
+  return t.concat(' l')                                                   // Devuelve un array
 })
 
 // 6. Filtrar: Seleccionar elementos de un array
-const firstElement = array.find((element) => element.nombre === 'Cuenca')
-const newArray = array.filter((property) => property.edad > 32)
-const partialArray = array.slice(2, 3)
+const firstElement = array.find((element) => element.nombre === 'Cuenca') // Devuelve un elemento
+const newArray = array.filter((property) => property.edad > 32)           // Devuelve un array
+const partialArray = array.slice(2, 3)                                    // Devuelve un array
 
 // 7. Recorrer: Recorrer arrays con bucles o iteradores
 for (let i = 0; i < arrayA.length; i++) console.log(arrayA[i])
