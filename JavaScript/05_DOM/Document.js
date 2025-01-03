@@ -20,7 +20,7 @@ button.addEventListener('click', () => {
   button.innerHTML = isLiked ? 'Quitar me gusta' : 'Me gusta'
 })
 
-// QuerySelectorAll
+// QuerySelectorAll(class, id, element)
 document.querySelectorAll('.item').forEach((item) => {
   item.style.color = 'blue'
 })
