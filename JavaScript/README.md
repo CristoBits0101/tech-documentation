@@ -3,6 +3,6 @@
 #          Destructuración: **Para extraer atributos de objetos**
 #       Patrones de diseño:
 #  Patrones de renderizado:
-# 
+#    Arquitectura hexgonal:
 
 La abstracción: Consiste en ocultar los detalles internos de una implementación y exponer solo las funciones o características esenciales para simplificar su uso.
