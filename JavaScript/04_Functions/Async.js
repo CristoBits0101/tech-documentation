@@ -29,8 +29,15 @@ getData((error, data) => {
   console.log('Callback with data: ', data)
 })
 
-// Fetch
-fetch('https://api.example.com/data')
+// Fetch con cabeceras personalizadas
+fetch('https://api.example.com/data', {
+  method: 'GET',
+  headers: {
+    'Content-Type': 'application/json',
+    Authorization: 'dfg634_123',
+    'Custom-Header': 'YourCustomValue',
+  },
+})
   .then((response) => {
     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`)
     return response.json()
