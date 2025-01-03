@@ -9,3 +9,6 @@
 #   Screaming arquitectura: **Refleja el dominio en el diseño**
 #                     Pila: **LIFO: Último en entrar, primero en salir**
 #                    Colas: **FIFO: Primero en entrar, primero en salir**
+#           sessionStorage: **Cierras la pestaña se borran los datos, para bancos muy útil**
+#             localStorage: **Uno por dominio, son permanetes hasta que se borren**
+#                  Cookies: **Se guardan en el servidor**
