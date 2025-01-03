@@ -36,17 +36,32 @@ class Constructor {
 }
 
 class Peon extends Constructor {
-  color
+  _color
+
   constructor(name, age, country, color) {
     super(name, age, country)
     this.color = color
   }
 
-  static get color() {}
-  static set color(value) {
+  get color() {
+    return this._color
+  }
+
+  set color(value) {
     if (value === 'white' || value === 'black') this._color = value
     else throw new Error('Color must be either white or black.')
   }
 }
 
-color(red)
+// Ejemplo de uso
+try {
+  const peon1 = new Peon('Cristo', 30, 'USA', 'white')
+  console.log(peon1.name)
+  console.log(peon1.color)
+
+  const peon2 = new Peon('Juan', 25, 'Spain', 'black')
+  console.log(peon2.color)
+  peon2.color = 'red'
+} catch (error) {
+  console.error(error.message)
+}

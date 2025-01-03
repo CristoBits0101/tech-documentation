@@ -1,90 +1,82 @@
-// Declaración
+// 1. Declaración: Crear listas o arrays básicos
 const lista = []
-
-// Modificar
-lista[0] = 0
-lista.unshift('Valor al inicio')
-lista.push('Valor al final')
-
-// Cast
-const arrayF = Array.from('data')
-const arrayG = arrayC.join(',')
-
-// Compare
-if (arrayA.join('') === arrayB.join('')) console.log(true)
-if (arrayA.join('') !== arrayB.join('')) console.log(true)
-if (
-  arrayA.length === arrayB.length &&
-  arrayA.every((element, index) => element === arrayB[index])
-)
-  console.log(true)
-
-// Concatenate
-const arrayH = [...arrayA, ...arrayB, ...arrayC]
-const arrayI = [arrayA, arrayB]
-const arrayJ = arrayA.map((t) => {
-  return t.concat(' l')
-})
-
-// Create
-const arrayA = []
-const arrayB = [undefined, null, false, 0, '']
-const arrayE = [
+const lista2 = [undefined, null, false, 0, '']
+const lista3 = [
   { name: 'Cristo', age: 36 },
   { name: 'Toru', age: 6 },
 ]
 
-// Filter
+// 2. Modificar: Agregar o modificar valores en un array
+lista[0] = 0
+lista.unshift('Valor al inicio')
+lista.push('Valor al final')
+
+// 3. Convertir: Convertir entre arrays y cadenas
+const lista = Array.from('data')
+const cadena = ahoraSoyUnaLista.join(', ')
+
+// 4. Comparar: Comparar arrays para determinar igualdad
+if (arrayA.join('') === lista2.join('')) console.log(true)
+if (arrayA.join('') !== lista2.join('')) console.log(true)
+if (
+  arrayA.length === lista2.length &&
+  arrayA.every((element, index) => element === lista2[index])
+)
+  console.log(true)
+
+// 5. Concatenar: Combinar o unir arrays
+const arrayH = [...arrayA, ...lista2, ...arrayC]
+const arrayI = [arrayA, lista2]
+const arrayJ = arrayA.map((t) => {
+  return t.concat(' l')
+})
+
+// 6. Filtrar: Seleccionar elementos de un array
 const firstElement = array.find((element) => element.nombre === 'Cuenca')
 const newArray = array.filter((property) => property.edad > 32)
 const partialArray = array.slice(2, 3)
 
-// For
+// 7. Recorrer: Recorrer arrays con bucles o iteradores
 for (let i = 0; i < arrayA.length; i++) console.log(arrayA[i])
-
-// Keys
 const indices = Array.from(arrayA.keys())
 
-// Reduce
+// 8. Reduce: Reducir un array a un único valor
 const sumAges = arrayE.reduce(
   (accumulator, element) => accumulator + element.edad,
   0
 )
 
-// Rest
+// 9. Rest: Trabajar con el operador rest y spread
 const arrayK = [1, 2, 3, 4, 5]
-
 function sum(...numbers) {
   return numbers.reduce((a, b) => a + b, 0)
 }
-
 console.log(sum(...arrayK))
 
-// Replace
+// 10. Replace: Reemplazar elementos en un array
 arrayA.splice(2, 1, 'Replace')
 
-// Set
+// 11. Set: Trabajar con conjuntos (Set)
 const arrayL = new Set()
 arrayL.add('pepa')
 arrayL.delete('pepa')
 arrayL.clear()
-
 console.log(arrayL.has(3))
 console.log(arrayL.size())
 
-// Sort
+// 12. Sort: Ordenar elementos de un array
 arrayK.sort((firstElement, secondElement) => firstElement - secondElement)
 arrayK.sort((firstElement, secondElement) => secondElement - firstElement)
 
-// Remove
+// 13. Remove: Eliminar elementos de un array
 arrayC.shift()
-arrayC.shift(2, 1)
 arrayC.pop()
 
-// Verify
+// 14. Verify: Verificar condiciones en arrays
 arrayA.some((element) => element === 'Exists')
 arrayI.some((element) => element.name === 'Cristo')
 array.every((valor) => valor !== null)
 array.every((valor) => typeof valor === 'number' && valor > 0)
 
+// 15. forEach: Iterar sobre elementos de un array
 array.forEach((element) => {})
