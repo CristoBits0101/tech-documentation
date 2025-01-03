@@ -1,12 +1,31 @@
 // Await
+// Await con datos
 async function fetchData() {
+  const dataToSend = {
+    name: 'John Doe',
+    email: 'johndoe@example.com',
+    age: 30,
+  };
+
   try {
-    const response = await fetch('https://api.example.com/data')
-    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`)
-    const data = await response.json()
-    console.log('Data: ', data)
+    const response = await fetch('https://api.example.com/data', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: 'dfg634_123',
+        'Custom-Header': 'YourCustomValue',
+      },
+      body: JSON.stringify(dataToSend), // Convertir los datos a JSON
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const data = await response.json(); // Convertir la respuesta a JSON
+    console.log('Data received: ', data);
   } catch (error) {
-    console.error('Error: ', error.message)
+    console.error('Error: ', error.message);
   }
 }
 
@@ -31,12 +50,13 @@ getData((error, data) => {
 
 // Fetch con cabeceras personalizadas
 fetch('https://api.example.com/data', {
-  method: 'GET',
+  method: 'POST',
   headers: {
     'Content-Type': 'application/json',
     Authorization: 'dfg634_123',
     'Custom-Header': 'YourCustomValue',
   },
+  body: JSON.stringify(dataToSend),
 })
   .then((response) => {
     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`)
