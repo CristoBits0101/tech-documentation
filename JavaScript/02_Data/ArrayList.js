@@ -92,13 +92,11 @@ arrayK.sort((firstElement, secondElement) => secondElement - firstElement)
 
 // 13. Remove: Eliminar elementos de un array
 arrayC.shift() // remove first element
-arrayC.p op() // remove second element
+arrayC.pop() // remove second element
 
 // 14. Verify: Verificar condiciones en arrays
-arrayA.some((element) => element === 'Exists')
-arrayI.some((element) => element.name === 'Cristo')
-array.every((valor) => valor !== null)
-array.every((valor) => typeof valor === 'number' && valor > 0)
+arrayA.some((element) => element === 'Exists') // Devuelve true o false en la primera coincidencia
+array.every((valor) => valor !== null) // True si todos los elementos cumplen la condición
 
 // 15. forEach: Iterar sobre elementos de un array
 array.forEach((element) => {})
