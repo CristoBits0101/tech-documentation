@@ -1,5 +1,4 @@
-// Variable no definida
-ReferenceError
+
 
 // Variable no inicializada
 let x
