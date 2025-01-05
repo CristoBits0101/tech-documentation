@@ -25,18 +25,15 @@ if (
   console.log(true)
 
 // 5. Concatenar: Combinar o unir arrays
-// Se crea una lista unica
 let listaA = [1, 2, 3, 4, 5]
 let listaB = [1, 2, 3, 4, 5]
 let listaC = [1, 2, 3, 4, 5]
-const lista4 = [...listaA, ...listaB, ...listaC]
 
-// Se crea una lista de listas
-const arrayI = [arrayA, lista2]
-
-// Se crea una lista de listas
+const lista4 = [...listaA, ...listaB, ...listaC] // Crea una lista unica
+const arrayI = [arrayA, lista2] // Crea una lista de listas
 const arrayJ = arrayA.map((t) => {
-  return t.concat(' l') // Devuelve un array
+  // Crea una lista de listas
+  return t.concat(' l')
 })
 
 // 6. Filtrar: Seleccionar elementos de un array
