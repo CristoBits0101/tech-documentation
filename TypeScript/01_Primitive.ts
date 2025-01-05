@@ -1,5 +1,5 @@
 // 1.1. Number
-const number = 1
+const age = 1
 let num: number = 2
 
 // 1.2. String
