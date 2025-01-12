@@ -8,3 +8,4 @@
     6. Aplicaciones móviles.
     7. Aplicaciones de terminal.
     8. Meta es el propietario.
+    9. Evita ataques XSS.
