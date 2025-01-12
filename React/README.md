@@ -11,3 +11,5 @@
     09. Evita ataques XSS.
     10. Creación en 2011.
     11. 2013 pasa a código abierto.
+    12. React es la biblioteca.
+    13. ReactDOM trabaja con el DOM del navegador.
