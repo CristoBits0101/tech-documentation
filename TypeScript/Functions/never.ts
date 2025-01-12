@@ -1,4 +1,4 @@
-// 10.1. Función que nunca devuelve nada, void si podría pero no le importa
+// Never significa que la función nunca retorna.
 const showError = (error: string): never => {
     throw new Error(error)
 }

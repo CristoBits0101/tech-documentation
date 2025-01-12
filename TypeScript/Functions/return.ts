@@ -1,4 +1,4 @@
-// 9.1. Función que recibe una función que devuelve una string
+// Función que recibe una función que devuelve una string
 const sayHelloFromFunction = (fn: (name: string) => string) => {
     // Ejecuta la función que recibe
     let hello = fn('Hola!')

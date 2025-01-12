@@ -1,6 +1,13 @@
-// 8.1. Función que recibe una función que no devuelve nada y si devuelve no importa
+/**
+ * Función que recibe otra función cuyo retorno no importa.
+ * fn: Nombre del parámetro.
+ * fn: (name: string) => void
+ *             (name) => { console.log(`Hola ${name}`)
+ */
 const sayHiFromFunction = (fn: (name: string) => void) => {
-    fn('Hola!')
+  fn('Cristo')
 }
 
-sayHiFromFunction((name) => { console.log(`Hola ${name}`) })
+sayHiFromFunction((name) => {
+  console.log(`Hola ${name}`)
+})

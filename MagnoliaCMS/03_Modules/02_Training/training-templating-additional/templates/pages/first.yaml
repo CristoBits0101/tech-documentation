@@ -1,5 +1,0 @@
-areas:
-  main:
-    availableComponents:
-      recursivePageLinkList:
-        id: training-templating-additional:components/recursivePageLinkList
