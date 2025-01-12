@@ -7,6 +7,6 @@ export default function Expresiones() {
 }
 
 export default function Declaración() {
-  // Error: solo se evalúan expresiones
+  // Error: Solo se evalúan expresiones
   // return <div>{if (condition) {}}</div>
 }
