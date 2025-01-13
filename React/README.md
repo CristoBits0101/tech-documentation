@@ -15,6 +15,7 @@
     13. ReactDOM trabaja con el DOM del navegador.
     14. Los componentes son PascalCase.
     15. PascalCase diferencia un componente de un elemento.
+    16. Si se renderiza un componente padre tambien los hijos.
 
 # CASE
 
