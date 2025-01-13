@@ -16,6 +16,7 @@
     14. Los componentes son PascalCase.
     15. PascalCase diferencia un componente de un elemento.
     16. Si se renderiza un componente padre tambien los hijos.
+    17. StrictMode ejecuta el código por segunda vez en desarrollo en busca de errores.
 
 # CASE
 
