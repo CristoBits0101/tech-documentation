@@ -1,4 +1,4 @@
-export default function UncontrolledValidationsOnClick() {
+export default function UncontrolledValidationsOnSubmit() {
   // 1. Crear una referencia
   const inputRef = React.useRef()
   // 4. Manejar el envío sin preventDefault
