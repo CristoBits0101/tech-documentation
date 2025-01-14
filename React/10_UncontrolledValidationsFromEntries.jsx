@@ -3,10 +3,8 @@ export default function UncontrolledValidationsFormData() {
   const handleSubmit = (event) => {
     // 3. Evitar el envío del formulario
     event.preventDefault()
-    // 4. Obtener el formulario
-    const fields = new window.FormData(event.target)
-    // 5. Obtener el valor del input
-    const query = fields.get('query')
+    // 4. Obtener el valor del input
+    const { query } = Object.fromEntries(new window.FormData(event.target))
     alert(query)
   }
   return (
