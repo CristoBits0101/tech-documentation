@@ -2,23 +2,23 @@ export default function UncontrolledValidationsOnSubmit() {
   // 1. Crear una referencia
   const inputRef = React.useRef()
   // 4. Manejar el envío sin preventDefault
-  const handleClick = (event) => {
-    // v1
+  const handleSubmit = (event) => {
+    // 5. Evitar el envío del formulario
+    event.preventDefault()
+    // Versión 1
     const value = inputRef.current.value
     alert(value)
-    // v2
+    // Versión 2
     const inputElement = inputRef.current
     const inputValue = inputElement.value
     alert(inputValue)
   }
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       {/* 2. Asignar una referencia */}
       <input type='search' ref={inputRef} />
       {/* 3. Crear control de envío */}
-      <button type='submit' onClick={handleClick}>
-        Enviar
-      </button>
+      <button type='submit'>Enviar</button>
     </form>
   )
 }
