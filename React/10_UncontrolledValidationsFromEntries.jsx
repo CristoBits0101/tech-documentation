@@ -1,4 +1,4 @@
-export default function UncontrolledValidationsFormData() {
+export default function UncontrolledValidationsFromEntries() {
   // 2. Manejar el envío sin preventDefault
   const handleSubmit = (event) => {
     // 3. Evitar el envío del formulario

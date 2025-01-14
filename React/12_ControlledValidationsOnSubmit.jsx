@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export default function ControlledValidationsUseEffect() {
+export default function ControlledValidationsOnSubmit() {
   // Estados de la consulta
   const [query, setQuery] = useState('')
   const [error, setError] = useState('')
